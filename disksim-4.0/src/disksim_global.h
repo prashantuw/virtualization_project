@@ -255,7 +255,8 @@ typedef struct foo {
 
 typedef struct {
 	int vmid;
-	int shares;
+	int cur_shares;
+	int max_shares;
 	struct vm *next;
 } vm;
 

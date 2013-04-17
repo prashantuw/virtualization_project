@@ -198,6 +198,7 @@ typedef struct iob {
    int       cylinder;
    int       surface;
    int       opid;
+   int vmid;
 } iobuf;
 
 struct ioq;

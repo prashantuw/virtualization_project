@@ -91,7 +91,8 @@ int main (int argc, char **argv)
 		{
 		VM newnode = malloc(sizeof(vm));
 		newnode->vmid = vmid;
-		newnode->shares = share;
+		newnode->cur_shares = share;
+		newnode->max_shares = share;
 		newnode->next = NULL;
 		if(VMHEAD == NULL)
 			{
@@ -106,7 +107,7 @@ int main (int argc, char **argv)
 			}
 		}
       }
-	//disksim_run_simulation ();
-	//disksim_cleanup_and_printstats ();
+	disksim_run_simulation ();
+	disksim_cleanup_and_printstats ();
 	exit(0);
 }

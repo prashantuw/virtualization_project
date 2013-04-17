@@ -1298,13 +1298,80 @@ fprintf (outputfile, "diff1 %d, diff2 %d, diffdiff %d, value %d\n", diff1, diff2
    return(temp);
 }
 
+/* Prints current status of VM queue */
+void print_vm_queue()
+{
+	VM cur = VMHEAD;
+	while ( cur != NULL )
+	{
+		printf("\n VM ID: %d, Shares:%d/%d",cur->vmid,cur->cur_shares,cur->max_shares);
+		cur = cur->next;
+	}
+}
+
+/* Reduce the shares of VM with VMID by X */
+void reduce_shares(int vmid,int amount)
+{
+	VM cur = VMHEAD;
+	while ( cur != NULL )
+		{
+			if ( cur->vmid == vmid )
+			{
+				cur->cur_shares = cur->cur_shares - amount;
+				break;
+			}
+			cur = cur->next;
+		}
+}
+
+/* Resets shares of all VMs. Done when all VMs have less than 0 Shares left */
+void reset_vm_shares()
+{
+	VM curpos = VMHEAD;
+	while (curpos != NULL)
+		{
+			curpos->cur_shares = curpos->max_shares;
+			curpos=curpos->next;
+		}
+}
+
+
+/* Returns which VM's IO request should be processed next, based on remaining shares */
+int get_vm_to_run()
+{
+	int maxshares = 0;
+	VM pos = NULL;
+	VM curpos = VMHEAD;
+	int vmid;
+	while (curpos != NULL)
+	{
+		if ( curpos->cur_shares > maxshares )
+		{
+			maxshares = curpos->cur_shares;
+			pos = curpos;
+		}
+		curpos=curpos->next;
+	}
+	//Check if VM id is allocated, otherwise reassign max shares ans call this function again
+	if (pos == NULL)
+	{
+		reset_vm_shares();
+		vmid = get_vm_to_run();
+	}
+	else
+	{
+		vmid = pos->vmid;
+	}
+ return vmid;
+}
 
 /* Queue contains >= 2 items when called */
 
 static iobuf *ioqueue_get_request_from_opt_sptf_queue (subqueue *queue, int checkcache, int ageweight, int posonly)
 {
-    printf("\n Length of sptf queue %d", queue->listlen);
-	int i;
+   printf("\n Length of sptf queue %d", queue->listlen);
+   print_vm_queue();
+   int i;
    iobuf *temp;
    iobuf *best = NULL;
    ioreq_event *test;
@@ -1318,8 +1385,8 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue (subqueue *queue, int chec
 
    double age = 0.0;
 
-
-
+   int vmtorun = get_vm_to_run();
+   printf("\n In this attempt, VM %d should run", vmtorun);
    ASSERT((ageweight >= 0) && (ageweight <= 3));
    readdelay = queue->bigqueue->readdelay;
    writedelay = queue->bigqueue->writedelay;
@@ -1369,7 +1436,7 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue (subqueue *queue, int chec
 	    // fprintf(outputfile, "get_request_from_sptf...::  blkno = %d, delay = %f\n", test->blkno, delay);
 
 	    //	    fprintf(stderr,"serv %f old eff = %f new %f blkno %ld\n",temp_serv, mintime, delay,temp->blkno);
-	    if (delay < mintime) {
+	    if (delay < mintime && temp->vmid == vmtorun) {
 	      best = temp;
 	      mintime = delay;
 	    }
@@ -1387,6 +1454,8 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue (subqueue *queue, int chec
 	    mintime, best->cylinder, best->blkno, (best->flags & READ), best->iolist->devno);
    */
 
+   printf("\n returning request details- VM ID:%d Block No: %d",best->vmid,best->blkno);
+   reduce_shares(best->vmid,100);
    return(best);
 }
 
@@ -3203,6 +3272,7 @@ fprintf (outputfile, "Entering ioqueue_add_new_request: %d\n", new->blkno);
    ioqueue_update_arrival_stats(queue, new);
    tmp = (iobuf *) getfromextraq();
    StaticAssert (sizeof(iobuf) <= sizeof(event));
+   tmp->vmid = new->vmid;
    tmp->starttime = -1.0;
    tmp->state = WAITING;
    tmp->next = NULL;

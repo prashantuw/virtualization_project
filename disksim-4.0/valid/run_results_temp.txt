@@ -1,0 +1,76 @@
+
+These results represent actual drive validation experiments
+
+QUANTUM_QM39100TD-SW (rms should be about 0.378)
+rms = 0.377952
+
+SEAGATE_ST32171W (rms should be about 0.349)
+rms = 0.347570
+
+SEAGATE_ST34501N (rms should be about 0.318)
+rms = 0.317972
+
+SEAGATE_ST39102LW (rms should be about 0.107)
+rms = 0.106906
+
+IBM_DNES-309170W (rms should be about 0.135)
+rms = 0.135884
+
+QUANTUM_TORNADO (rms should be about 0.268)
+rms = 0.267721
+
+HP_C2247_validate (rms should be about 0.090)
+rms = 0.089931
+
+HP_C3323_validate (rms should be about 0.306)
+rms = 0.305653
+
+HP_C2490_validate (rms should be about 0.254)
+rms = 0.253762
+
+DEC_RZ26_validate (rms should be about 0.340)
+rms = 0.340367
+
+The remaining tests exercise other DiskSim components
+
+Open synthetic workload (avg. resp. should be about 10.9ms)
+IOdriver Response time average: 	10.937386
+
+Closed synthetic workload (avg. resp. should be about 87.6ms)
+IOdriver Response time average: 	87.819135
+
+Mixed synthetic workload (avg. resp. should be about 22.08ms)
+IOdriver Response time average: 	22.086628
+
+RAID 5 at device driver (avg. resp. should be about 22.8ms)
+IOdriver Response time average: 	22.861326
+
+Set of disk arrays at device driver (avg. resp. should be about 34.3ms)
+Overall I/O System Response time average: 	34.272035
+
+Memory cache at controller (avg. resp. should be about 24.6ms)
+IOdriver Response time average: 	24.651367
+
+Cache device managed at controller (avg. resp. should be about 28.9ms)
+IOdriver Response time average: 	28.939379
+
+Simpledisk instead of original model (avg. resp. should be about 13.5ms)
+IOdriver Response time average: 	13.711596
+3 different disks
+(avg. resps. should be about 10.937)
+IOdriver Response time average: 	10.937386
+3 disks on separate controllers
+(avg. resps. should be about 10.937)
+IOdriver Response time average: 	10.937386
+
+Note: this validates HP trace input, *not* the corresponding traced disk
+HP srt trace input (avg. resp should be about 48.8ms)
+IOdriver Response time average: 	48.786646
+
+ASCII input (avg. resp should be about 13.8ms)
+IOdriver Response time average: 	13.766948
+
+syssim: externally-controlled DiskSim (avg. resp should be about 8.9ms)
+response time: n=1000 average=8.894719 std. deviation=2.116511
+IOdriver Response time average: 	8.894719
+

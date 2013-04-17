@@ -1,0 +1,223 @@
+Summary of Results:
+Trace File 0:
+Total IO requests: 10000
+Interarrival time: 5ms
+==============
+Driver Scheduling: 1 
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	5877
+Overall I/O System Requests per second:   	117.317098
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	10185.034629
+Overall I/O System Response time std.dev.:	5888.719238
+Overall I/O System Response time maximum:	20606.354173
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	6630
+Overall I/O System Requests per second:   	132.348538
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	5939.108589
+Overall I/O System Response time std.dev.:	6273.016765
+Overall I/O System Response time maximum:	42573.691974
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	4994
+Overall I/O System Requests per second:   	99.690588
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	7635.470045
+Overall I/O System Response time std.dev.:	8240.729935
+Overall I/O System Response time maximum:	48289.896045
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	7976
+Overall I/O System Requests per second:   	159.217487
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	4777.174773
+Overall I/O System Response time std.dev.:	5147.040290
+Overall I/O System Response time maximum:	37925.011688
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 32
+Results:
+Overall I/O System Total Requests handled:	9151
+Overall I/O System Requests per second:   	182.672921
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	2025.740507
+Overall I/O System Response time std.dev.:	2307.926795
+Overall I/O System Response time maximum:	26107.208528
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 64
+Results:
+Overall I/O System Total Requests handled:	9824
+Overall I/O System Requests per second:   	196.107396
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	662.144578
+Overall I/O System Response time std.dev.:	662.333188
+Overall I/O System Response time maximum:	6311.651685
+=============
+Driver Scheduling: 1
+Disk Scheduling: 8
+Disk Queue: 64
+Results:
+Overall I/O System Total Requests handled:	9609
+Overall I/O System Requests per second:   	191.815550
+Overall I/O System Completely idle time:  	104.513000   	0.002086
+Overall I/O System Response time average: 	1136.057505
+Overall I/O System Response time std.dev.:	665.194156
+Overall I/O System Response time maximum:	4985.217358
+========================================================================
+Summary of Results:
+Trace File 1:
+Total IO requests: 10000
+Interarrival time: 20ms
+=============
+Driver Scheduling: 1 
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.018937   	0.846327
+Overall I/O System Response time average: 	3.075528
+Overall I/O System Response time std.dev.:	4.576044
+Overall I/O System Response time maximum:	21.247214
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.018937   	0.846327
+Overall I/O System Response time average: 	3.075528
+Overall I/O System Response time std.dev.:	4.576044
+Overall I/O System Response time maximum:	21.247214
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.100937   	0.846327
+Overall I/O System Response time average: 	3.075519
+Overall I/O System Response time std.dev.:	4.576045
+Overall I/O System Response time maximum:	21.247214
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.100937   	0.846327
+Overall I/O System Response time average: 	3.075519
+Overall I/O System Response time std.dev.:	4.576045
+Overall I/O System Response time maximum:	21.247214
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 32
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.100937   	0.846327
+Overall I/O System Response time average: 	3.075519
+Overall I/O System Response time std.dev.:	4.576045
+Overall I/O System Response time maximum:	21.247214
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 64
+Results:
+Overall I/O System Total Requests handled:	9999
+Overall I/O System Requests per second:   	49.975010
+Overall I/O System Completely idle time:  	169333.100937   	0.846327
+Overall I/O System Response time average: 	3.075519
+Overall I/O System Response time std.dev.:	4.576045
+Overall I/O System Response time maximum:	21.247214
+========================================================================
+Summary of Results:
+Trace File 2:
+Total IO requests: 10000
+Interarrival time: 3ms
+=============
+Driver Scheduling: 1 
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	3570
+Overall I/O System Requests per second:   	118.616473
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	9753.600908
+Overall I/O System Response time std.dev.:	5569.669037
+Overall I/O System Response time maximum:	19286.214831
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 1
+Results:
+Overall I/O System Total Requests handled:	4051
+Overall I/O System Requests per second:   	134.598133
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	5816.690351
+Overall I/O System Response time std.dev.:	6032.148354
+Overall I/O System Response time maximum:	28162.799822
+=============
+Driver Scheduling: 8
+Disk Scheduling: 1
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	3024
+Overall I/O System Requests per second:   	100.475130
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	5700.526373
+Overall I/O System Response time std.dev.:	5546.967490
+Overall I/O System Response time maximum:	28935.041794
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 10
+Results:
+Overall I/O System Total Requests handled:	5121
+Overall I/O System Requests per second:   	170.149849
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	5381.398649
+Overall I/O System Response time std.dev.:	4932.730276
+Overall I/O System Response time maximum:	27099.633362
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 32
+Results:
+Overall I/O System Total Requests handled:	5825
+Overall I/O System Requests per second:   	193.540884
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	4492.138413
+Overall I/O System Response time std.dev.:	4855.805883
+Overall I/O System Response time maximum:	26558.394229
+=============
+Driver Scheduling: 8
+Disk Scheduling: 8
+Disk Queue: 64
+Results:
+Overall I/O System Total Requests handled:	6213
+Overall I/O System Requests per second:   	206.432535
+Overall I/O System Completely idle time:  	102.513000   	0.003406
+Overall I/O System Response time average: 	4214.119648
+Overall I/O System Response time std.dev.:	4460.140310
+Overall I/O System Response time maximum:	28156.082668

@@ -252,6 +252,16 @@ typedef struct foo {
    int    temp;
 } foo;
 
+
+typedef struct {
+	int vmid;
+	int shares;
+	struct vm *next;
+} vm;
+
+typedef vm *VM;
+VM VMHEAD; // Head of VM list
+
 #define DISKSIM_EVENT_SIZE	128
 #define DISKSIM_EVENT_SPACESIZE	(DISKSIM_EVENT_SIZE - sizeof(struct foo))
 

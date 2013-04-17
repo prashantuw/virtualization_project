@@ -919,10 +919,10 @@ void disksim_setup_disksim (int argc, char **argv)
 	   argv[4], argv[5]);
 #endif
 
-  if ((argc - 6) % 3) {
+  /*if ((argc - 6) % 3) {
     fprintf(stderr, "Parameter file overrides must be 3-tuples\n");
     exit(1);
-   } 
+   }*/
    
   disksim_setup_outputfile (argv[2], "w");
   fprintf (outputfile, "\n*** Output file name: %s\n", argv[2]); 

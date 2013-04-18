@@ -198,7 +198,8 @@ typedef struct iob {
    int       cylinder;
    int       surface;
    int       opid;
-   int vmid;
+   int vmid;  // The Id of the VM
+   int reference_count; // Number of times the request has been reference while in the queue inside disk
 } iobuf;
 
 struct ioq;

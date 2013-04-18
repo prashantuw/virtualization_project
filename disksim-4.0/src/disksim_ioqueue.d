@@ -52,4 +52,5 @@ disksim_ioqueue.o: disksim_ioqueue.c disksim_ioqueue.h disksim_global.h \
  modules/disksim_pf_param.h modules/disksim_pf_stats_param.h \
  modules/disksim_simpledisk_param.h modules/disksim_stats_param.h \
  modules/disksim_syncset_param.h modules/disksim_synthgen_param.h \
- modules/disksim_synthio_param.h
+ modules/disksim_synthio_param.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h

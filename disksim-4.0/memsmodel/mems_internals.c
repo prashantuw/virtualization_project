@@ -65,8 +65,7 @@
  *
  *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-coord_t *
-mems_get_current_position(mems_sled_t *sled) {
+coord_t *mems_get_current_position(mems_sled_t *sled) {
 
   //  ASSERT(pos != NULL);
 

@@ -29,8 +29,6 @@
  *
  */
 
-
-
 /*
  * DiskSim Storage Subsystem Simulation Environment (Version 2.0)
  * Revision Authors: Greg Ganger
@@ -54,60 +52,22 @@
  * TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
  */
 
-
 #include "disksim_global.h"
 #include <stdio.h>
-int main (int argc, char **argv)
-{
-	int len,vmid,share;
-    VMHEAD = NULL;
-
+int main(int argc, char **argv) {
 	setlinebuf(stdout);
 	setlinebuf(stderr);
 
-	if(argc == 2) {
-		disksim_restore_from_checkpoint (argv[1]);
-	}
-	else {
+	if (argc == 2) {
+		disksim_restore_from_checkpoint(argv[1]);
+	} else {
 		disksim = calloc(1, sizeof(struct disksim));
+		disksim_initialize_vminfo_structure("vm.config");
 		disksim_initialize_disksim_structure(disksim);
-		disksim_setup_disksim (argc, argv);
+		disksim_setup_disksim(argc, argv);
 	}
 
-	// Read VM configuration file and update vm structure
-	// VM config file is passed as last argument to disksim
-
-	FILE *fp;
-	fp = fopen("vm.config","r");
-
-	if(fp == NULL)
-	  {
-	    printf("\n Cannot open VM configuration File, exiting ! \n");
-	    return 1;
-	  }
-	else
-	  {
-		while (fscanf(fp,"%d %d",&vmid,&share) == 2 )
-		{
-		VM newnode = malloc(sizeof(vm));
-		newnode->vmid = vmid;
-		newnode->cur_shares = share;
-		newnode->max_shares = share;
-		newnode->next = NULL;
-		if(VMHEAD == NULL)
-			{
-			VMHEAD = newnode;
-			}
-		else
-			{
-			VM cur = VMHEAD;
-			while(cur->next != NULL)
-				cur = cur->next;
-			cur->next = newnode;
-			}
-		}
-      }
-	disksim_run_simulation ();
-	disksim_cleanup_and_printstats ();
+	disksim_run_simulation();
+	disksim_cleanup_and_printstats();
 	exit(0);
 }

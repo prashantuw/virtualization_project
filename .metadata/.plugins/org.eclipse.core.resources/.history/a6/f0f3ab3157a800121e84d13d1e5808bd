@@ -589,31 +589,19 @@ static void ioqueue_insert_fcfs_to_queue(subqueue *queue, iobuf *temp) {
 }
 
 /* queue->list not NULL when entered */
-/* This method takes a request and tries to add into the queue in such a way that
- * the queue retains its property of arranging requests in the order in which they
- * should be executed based on Shortest positioning time.
- *
- * The queue is maintained as a doubly linked list and queue->list points to the last
- * node. When a request has to be taken out for execution from this list, that is done
- * by taking the request which is at the head of the list.
- *
- * Where head is queue->list->next.
- */
+
 static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 	iobuf *head;
 	iobuf *run;
 
 	head = queue->list->next;
 
-	/* The conditions are evaluated from right to left */
 	if ((temp->cylinder < head->cylinder)
 			|| ((temp->cylinder == head->cylinder)
 					&& (temp->surface < head->surface))
 			|| ((temp->cylinder == head->cylinder)
 					&& (temp->surface == head->surface)
 					&& (temp->blkno < head->blkno))) {
-		/* Insert this request at the head of the list i.e just immediately before
-		 * existing head but after queue->list which points to the tail of the list.*/
 		queue->list->next = temp;
 		temp->next = head;
 		temp->prev = queue->list;
@@ -625,8 +613,6 @@ static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 			|| ((temp->cylinder == queue->list->cylinder)
 					&& (temp->surface == queue->list->surface)
 					&& (temp->blkno >= queue->list->blkno))) {
-		/* Insert this request at the tail of the list i.e just immediately after
-		 * existing tail but before head which points to the first node of the list.*/
 		temp->next = head;
 		temp->prev = queue->list;
 		head->prev = temp;
@@ -642,7 +628,6 @@ static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 						&& (temp->blkno >= run->next->blkno))) {
 			run = run->next;
 		}
-		/* Find the appropriate position of a node and insert it there. */
 		temp->next = run->next;
 		temp->prev = run;
 		temp->next->prev = temp;
@@ -1305,17 +1290,10 @@ void print_vm_queue() {
 /* Reduce the shares of VM with VMID by specified amount */
 void reduce_shares(int vmid, int amount) {
 	int index;
-	int total_shares = 0;
 	for (index = 0; index < VM_IN_USE; index++) {
 		if (VM_INFO_ARR[index].vmid == vmid) {
 			VM_INFO_ARR[index].cur_shares -= amount;
 		}
-		total_shares += VM_INFO_ARR[index].cur_shares;
-	}
-
-	// Check if shares of all VMs are 0 now. If yes, then reset shares.
-	if (total_shares > 0) {
-		reset_vm_shares();
 	}
 
 //	VM cur = VMHEAD;
@@ -1379,8 +1357,8 @@ void reset_vm_shares() {
 int get_vm_to_run(int vmid) {
 	int index;
 	for (index = 0; index < VM_IN_USE; index++) {
-		if (VM_INFO_ARR[index].vmid == vmid) {
-			if (VM_INFO_ARR[index].cur_shares > 0) {
+		if(VM_INFO_ARR[index].vmid == vmid){
+			if(VM_INFO_ARR[index].cur_shares > 0){
 				// The calling method should reduce the cur_shares.
 				return true;
 			}
@@ -2554,7 +2532,7 @@ static ioreq_event * ioqueue_show_next_request_from_subqueue(subqueue *queue) {
 		fprintf(stderr,
 				"Selected request is !READY_TO_GO in show_next_request_from_subqueue\n");
 		exit(1);
-	}ASSERT(temp->iolist != NULL);
+	} ASSERT(temp->iolist != NULL);
 	if (temp->reqcnt == 1) {
 		ret = temp->iolist;
 	} else if (temp->iob_un.pend.concat) {
@@ -2907,7 +2885,7 @@ static ioreq_event * ioqueue_get_specific_request_from_subqueue(subqueue *queue,
 	}
 	if (ioqueue_request_match(wanted, temp) == 0) {
 		return (NULL );
-	}ASSERT(READY_TO_GO(temp,queue));
+	} ASSERT(READY_TO_GO(temp,queue));
 
 	switch (queue->sched_alg) {
 	case ELEVATOR_LBN:
@@ -2966,7 +2944,7 @@ static ioreq_event * ioqueue_get_specific_request_from_subqueue(subqueue *queue,
 	while (ret) {
 		stat_update(&queue->qtimestats, (temp->starttime - ret->time));
 		ret = ret->next;
-	}ASSERT(temp->iolist != NULL);
+	} ASSERT(temp->iolist != NULL);
 	if (temp->reqcnt == 1) {
 		ret = temp->iolist;
 		temp->iolist = NULL;
@@ -3009,7 +2987,7 @@ static ioreq_event * ioqueue_set_starttime_in_subqueue(subqueue *queue,
 	}
 	if (!ioqueue_request_match(target, temp)) {
 		return (NULL );
-	}ASSERT(temp->state == WAITING);
+	} ASSERT(temp->state == WAITING);
 	if (temp->starttime == -1.0) {
 		temp->starttime = simtime;
 	}
@@ -3693,7 +3671,7 @@ static void ioqueue_clobber_overlaps_subqueue(subqueue *queue, ioreq_event *ret,
 			if (tmp == queue->list) {
 				return;
 			}
-		}ASSERT(tmp->reqcnt == 1);
+		} ASSERT(tmp->reqcnt == 1);
 		done = ioqueue_get_specific_request_from_subqueue(queue, tmp->iolist);
 		ASSERT(done != NULL);
 		done = ioqueue_remove_completed_request(queue, done);
@@ -3733,7 +3711,7 @@ ioreq_event * ioqueue_physical_access_done(ioqueue *queue, ioreq_event *curr) {
 		 fprintf(outputfile, "Checking the base queue\n");
 		 */
 		ret = ioqueue_remove_completed_request(&queue->base, curr);
-	}ASSERT(ret != NULL);
+	} ASSERT(ret != NULL);
 	if (queue->comboverlaps) {
 		double arrtimemax = (queue->comboverlaps == 1) ? simtime : ret->time;
 		ioqueue_clobber_overlaps_subqueue(&queue->priority, ret, arrtimemax);

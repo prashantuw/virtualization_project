@@ -3,21 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
 		<item value="95" key="DIALOG_Y_ORIGIN"/>
-		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="495" key="DIALOG_X_ORIGIN"/>
+		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="ioqueue_add_new_request" key="selection"/>
+		<item value="ioqueue_get_request_from_opt_sptf_queue" key="selection"/>
 		<list key="findhistory">
+			<item value="ioqueue_get_request_from_opt_sptf_queue"/>
 			<item value="ioqueue_add_new_request"/>
+			<item value="ioqueue_add_new_request("/>
+			<item value="ioqueue_insert_ordered_to_queue"/>
+			<item value="VM"/>
+			<item value="vm"/>
+			<item value="VM_"/>
 			<item value="//"/>
-			<item value="iobuf"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -589,31 +589,19 @@ static void ioqueue_insert_fcfs_to_queue(subqueue *queue, iobuf *temp) {
 }
 
 /* queue->list not NULL when entered */
-/* This method takes a request and tries to add into the queue in such a way that
- * the queue retains its property of arranging requests in the order in which they
- * should be executed based on Shortest positioning time.
- *
- * The queue is maintained as a doubly linked list and queue->list points to the last
- * node. When a request has to be taken out for execution from this list, that is done
- * by taking the request which is at the head of the list.
- *
- * Where head is queue->list->next.
- */
+
 static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 	iobuf *head;
 	iobuf *run;
 
 	head = queue->list->next;
 
-	/* The conditions are evaluated from right to left */
 	if ((temp->cylinder < head->cylinder)
 			|| ((temp->cylinder == head->cylinder)
 					&& (temp->surface < head->surface))
 			|| ((temp->cylinder == head->cylinder)
 					&& (temp->surface == head->surface)
 					&& (temp->blkno < head->blkno))) {
-		/* Insert this request at the head of the list i.e just immediately before
-		 * existing head but after queue->list which points to the tail of the list.*/
 		queue->list->next = temp;
 		temp->next = head;
 		temp->prev = queue->list;
@@ -625,8 +613,6 @@ static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 			|| ((temp->cylinder == queue->list->cylinder)
 					&& (temp->surface == queue->list->surface)
 					&& (temp->blkno >= queue->list->blkno))) {
-		/* Insert this request at the tail of the list i.e just immediately after
-		 * existing tail but before head which points to the first node of the list.*/
 		temp->next = head;
 		temp->prev = queue->list;
 		head->prev = temp;
@@ -642,7 +628,6 @@ static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 						&& (temp->blkno >= run->next->blkno))) {
 			run = run->next;
 		}
-		/* Find the appropriate position of a node and insert it there. */
 		temp->next = run->next;
 		temp->prev = run;
 		temp->next->prev = temp;
@@ -1313,9 +1298,11 @@ void reduce_shares(int vmid, int amount) {
 		total_shares += VM_INFO_ARR[index].cur_shares;
 	}
 
-	// Check if shares of all VMs are 0 now. If yes, then reset shares.
+	// Check if shares of all VMs are 0 now
 	if (total_shares > 0) {
-		reset_vm_shares();
+		for (index = 0; index < VM_IN_USE; index++) {
+			VM_INFO_ARR[index].cur_shares = VM_INFO_ARR[index].max_shares;
+		}
 	}
 
 //	VM cur = VMHEAD;

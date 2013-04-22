@@ -642,7 +642,6 @@ static void ioqueue_insert_ordered_to_queue(subqueue *queue, iobuf *temp) {
 						&& (temp->blkno >= run->next->blkno))) {
 			run = run->next;
 		}
-		/* Find the appropriate position of a node and insert it there. */
 		temp->next = run->next;
 		temp->prev = run;
 		temp->next->prev = temp;

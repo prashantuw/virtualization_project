@@ -59,7 +59,7 @@ Print sleep stats =  1
 disksim_iodriver DRIVER0 {
 type = 1,
 Constant access time = 0.0,
-  Scheduler = disksim_ioqueue {
+   Scheduler = disksim_ioqueue {
 Scheduling policy = 1,
 Cylinder mapping strategy = 1,
 Write initiation delay = 0.0,

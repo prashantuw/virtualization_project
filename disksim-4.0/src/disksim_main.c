@@ -51,9 +51,9 @@
  * MELLON UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT
  * TO FREEDOM FROM PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
  */
-
-#include "disksim_global.h"
 #include <stdio.h>
+#include "disksim_global.h"
+
 int main(int argc, char **argv) {
 	setlinebuf(stdout);
 	setlinebuf(stderr);

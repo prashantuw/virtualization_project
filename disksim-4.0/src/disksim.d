@@ -1,6 +1,7 @@
-disksim.o: disksim.c disksim_global.h disksim_rand48.h disksim_malloc.h \
- disksim_bitstring.h inline.h /usr/include/i386-linux-gnu/sys/types.h \
- /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
+disksim.o: disksim.c disksim_ioface.h disksim_global.h disksim_rand48.h \
+ disksim_malloc.h disksim_bitstring.h inline.h \
+ /usr/include/i386-linux-gnu/sys/types.h /usr/include/features.h \
+ /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h \
@@ -30,9 +31,8 @@ disksim.o: disksim.c disksim_global.h disksim_rand48.h disksim_malloc.h \
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h disksim_assertlib.h \
- /usr/include/assert.h disksim_reqflags.h disksim_ioface.h \
- disksim_pfface.h disksim_iotrace.h config.h \
- ../libparam/include/libparam/libparam.h \
+ /usr/include/assert.h disksim_reqflags.h disksim_pfface.h \
+ disksim_iotrace.h config.h ../libparam/include/libparam/libparam.h \
  ../libparam/include/libparam/bitvector.h \
  ../libddbg/include/libddbg/libddbg.h modules/disksim_global_param.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/signum.h \

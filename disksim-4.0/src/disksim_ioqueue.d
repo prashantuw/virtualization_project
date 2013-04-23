@@ -1,5 +1,5 @@
-disksim_ioqueue.o: disksim_ioqueue.c disksim_ioqueue.h disksim_global.h \
- disksim_rand48.h disksim_malloc.h disksim_bitstring.h inline.h \
+disksim_ioqueue.o: disksim_ioqueue.c disksim_global.h disksim_rand48.h \
+ disksim_malloc.h disksim_bitstring.h inline.h \
  /usr/include/i386-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -31,9 +31,9 @@ disksim_ioqueue.o: disksim_ioqueue.c disksim_ioqueue.h disksim_global.h \
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h disksim_assertlib.h \
- /usr/include/assert.h disksim_reqflags.h disksim_iosim.h \
- disksim_ioface.h disksim_device.h disksim_orgface.h disksim_iotrace.h \
- disksim_stat.h disksim_iodriver.h config.h \
+ /usr/include/assert.h disksim_reqflags.h disksim_ioqueue.h \
+ disksim_iosim.h disksim_ioface.h disksim_device.h disksim_orgface.h \
+ disksim_iotrace.h disksim_stat.h disksim_iodriver.h config.h \
  ../libparam/include/libparam/libparam.h \
  ../libparam/include/libparam/bitvector.h \
  ../libddbg/include/libddbg/libddbg.h disksim_bus.h disksim_controller.h \

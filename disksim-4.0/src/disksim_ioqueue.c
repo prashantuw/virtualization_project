@@ -100,6 +100,7 @@
 #define NULL   ((void *) 0)
 #endif
 
+#include "disksim_global.h"
 #include "disksim_ioqueue.h"
 #include "modules/modules.h"
 #include <stdbool.h>
@@ -1291,7 +1292,7 @@ static iobuf * ioqueue_get_request_from_cyl_vscan_queue(subqueue *queue,
 void print_vm_queue() {
 	int index;
 	for (index = 0; index < VM_IN_USE; index++) {
-		printf("\n VM ID: %d, Shares:%d/%d", VM_INFO_ARR[index].vmid,
+		printf("VM ID: %d, Shares:%d/%d\n", VM_INFO_ARR[index].vmid,
 				VM_INFO_ARR[index].cur_shares, VM_INFO_ARR[index].max_shares);
 	}
 //	VM cur = VMHEAD;
@@ -1394,7 +1395,7 @@ int get_vm_to_run(int vmid) {
 
 static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 		int checkcache, int ageweight, int posonly) {
-	printf("\n Length of sptf queue %d", queue->listlen);
+	printf("Length of sptf queue %d\n", queue->listlen);
 	print_vm_queue();
 	int i;
 	iobuf *temp;
@@ -1465,10 +1466,11 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 				// fprintf(outputfile, "get_request_from_sptf...::  blkno = %d, delay = %f\n", test->blkno, delay);
 
 				//	    fprintf(stderr,"serv %f old eff = %f new %f blkno %ld\n",temp_serv, mintime, delay,temp->blkno);
-				if (delay < mintime && get_vm_to_run(temp->vmid)) {
+				if (delay < mintime)// && get_vm_to_run(temp->vmid)) {
+				{
 					best = temp;
 					mintime = delay;
-					printf("\n In this attempt, VM %d should run", temp->vmid);
+					printf("\n In this attempt, VM %d should run\n", temp->vmid);
 				}
 			}
 		} else {
@@ -1477,10 +1479,13 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 
 		temp = temp->next;
 	}
+	printf("\nVM_IN_USE = %d\n", VM_IN_USE);
 	addtoextraq((event *) test);
-	printf("\n returning request details- VM ID:%d Block No: %d", best->vmid,
+	if(best != NULL){
+		printf("\n returning request details- VM ID:%d Block No: %d\n", best->vmid,
 			best->blkno);
-	reduce_shares(best->vmid, 100);
+		reduce_shares(best->vmid, 100);
+	}
 	/*
 	 fprintf (outputfile, "Selected request: %f, cylno %d, blkno %d, read %d, devno %d\n",
 	 mintime, best->cylinder, best->blkno, (best->flags & READ), best->iolist->devno);

@@ -96,7 +96,7 @@
  * holders.
  */
 
-#include "disksim_global.h"
+int VM_IN_USE = 0;
 #include "disksim_ioface.h"
 #include "disksim_pfface.h"
 #include "disksim_iotrace.h"
@@ -1066,5 +1066,6 @@ void disksim_initialize_vminfo_structure(char *vmconfig_file) {
 		}
 	}
 	VM_IN_USE = index;  // Sets the number of VMs that are in use.
+	printf("Index = %d, VM_IN_USE = %d\n", index, VM_IN_USE);
 	fclose(fp);
 }

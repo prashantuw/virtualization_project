@@ -1,0 +1,383 @@
+Index = 3, VM_IN_USE = 3
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 2 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 11167996
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 11168000
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 11168000
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 9772056
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:500/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 9772056
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:400/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 4057360
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:300/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 4057436
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:200/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 4057520
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:100/500
+VM ID: 3, Shares:200/600
+
+ In this attempt, VM 1 should run
+
+ returning request details- VM ID:1 Block No: 869888
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:100/500
+VM ID: 3, Shares:200/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 3478568
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:100/500
+VM ID: 3, Shares:100/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ returning request details- VM ID:1 Block No: 7806564
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:100/500
+VM ID: 3, Shares:100/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 9974552
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:0/500
+VM ID: 3, Shares:100/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 2 should run
+
+ In this attempt, VM 1 should run
+
+ returning request details- VM ID:1 Block No: 12475148
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:0/500
+VM ID: 3, Shares:100/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 2 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 13701344
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 11353544
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ In this attempt, VM 1 should run
+
+ returning request details- VM ID:1 Block No: 7597580
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 1 should run
+
+ returning request details- VM ID:1 Block No: 2014736
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 25 should run
+
+ returning request details- VM ID:25 Block No: 14073900
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+
+ In this attempt, VM 26 should run
+
+ In this attempt, VM 2 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:500/600
+
+ In this attempt, VM 26 should run
+
+ In this attempt, VM 2 should run
+
+ In this attempt, VM 24 should run
+
+ returning request details- VM ID:24 Block No: 17871548
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:500/600
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 2 should run
+
+ returning request details- VM ID:2 Block No: 17843220
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:500/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871492
+Length of sptf queue 8
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 22 should run
+
+ returning request details- VM ID:22 Block No: 17871520
+Length of sptf queue 8
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 23 should run
+
+ returning request details- VM ID:23 Block No: 17871524
+Length of sptf queue 8
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ In this attempt, VM 23 should run
+
+ returning request details- VM ID:23 Block No: 17871524
+Length of sptf queue 8
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871500
+Length of sptf queue 6
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:300/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871500
+Length of sptf queue 6
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:200/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871504
+Length of sptf queue 6
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:100/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ In this attempt, VM 3 should run
+
+ returning request details- VM ID:3 Block No: 17871504
+Length of sptf queue 6
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ returning request details- VM ID:28 Block No: 7822384
+Length of sptf queue 4
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 28 should run
+
+ returning request details- VM ID:28 Block No: 7822384
+Length of sptf queue 3
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 26 should run
+
+ In this attempt, VM 27 should run
+
+ returning request details- VM ID:27 Block No: 7822412
+Length of sptf queue 2
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+
+ In this attempt, VM 29 should run
+
+ In this attempt, VM 26 should run
+
+ returning request details- VM ID:26 Block No: 7822400

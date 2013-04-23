@@ -1315,7 +1315,7 @@ void reduce_shares(int vmid, int amount) {
 	}
 
 	// Check if shares of all VMs are 0 now. If yes, then reset shares.
-	if (total_shares > 0) {
+	if (total_shares <= 0) {
 		reset_vm_shares();
 	}
 
@@ -1337,7 +1337,7 @@ void reset_vm_shares() {
 	// shares too to the max_shares for a VM.
 	int index;
 	for (index = 0; index < VM_IN_USE; index++) {
-		VM_INFO_ARR[index].cur_shares = VM_INFO_ARR[0].max_shares;
+		VM_INFO_ARR[index].cur_shares = VM_INFO_ARR[index].max_shares;
 	}
 //	VM curpos = VMHEAD;
 //	while (curpos != NULL)
@@ -1479,7 +1479,6 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 
 		temp = temp->next;
 	}
-	printf("\nVM_IN_USE = %d\n", VM_IN_USE);
 	addtoextraq((event *) test);
 	if(best != NULL){
 		printf("\n returning request details- VM ID:%d Block No: %d\n", best->vmid,

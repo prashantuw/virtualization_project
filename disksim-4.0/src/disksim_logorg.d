@@ -41,7 +41,8 @@ disksim_logorg.o: disksim_logorg.c /usr/include/errno.h \
  disksim_ioqueue.h disksim_disk.h ../diskmodel/include/diskmodel/dm.h \
  ../diskmodel/include/diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
- /usr/include/i386-linux-gnu/bits/wchar.h modules/modules.h \
+ /usr/include/i386-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h modules/modules.h \
  modules/disksim_bus_param.h modules/disksim_bus_stats_param.h \
  modules/disksim_cachedev_param.h modules/disksim_cachemem_param.h \
  modules/disksim_ctlr_param.h modules/disksim_ctlr_stats_param.h \

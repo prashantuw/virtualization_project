@@ -44,4 +44,5 @@ mems_event.o: mems_event.c /usr/include/stdio.h /usr/include/features.h \
  ../src//disksim_disk.h ../src//disksim_ioqueue.h ../diskmodel/dm.h \
  ../diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
- /usr/include/i386-linux-gnu/bits/wchar.h
+ /usr/include/i386-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h

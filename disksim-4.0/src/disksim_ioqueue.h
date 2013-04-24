@@ -106,7 +106,7 @@
 #include "disksim_stat.h"
 #include "disksim_disk.h"
 #include "config.h"
-
+#include <stdbool.h>
 
 struct ioq;
 void		ioqueue_setcallbacks (void);
@@ -200,6 +200,7 @@ typedef struct iob {
    int       opid;
    int 		 vmid;  // The Id of the VM
    int 		 reference_count; // Number of times the request has been reference while in the queue inside disk
+   bool		 evictedOnce;
 } iobuf;
 
 struct ioq;

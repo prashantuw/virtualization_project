@@ -1,0 +1,667 @@
+Index = 3, VM_IN_USE = 3
+Completed VMID: 1, Block: (17317516)
+Completed VMID: 1, Block: (17317516)
+Completed VMID: 1, Block: (17317516)
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9974552) 1 (11167996) 1 (11168000) 1 (12475148) 
+
+ Scanned 2014736
+
+ Scanned 4057360
+
+ Scanned 9974552
+
+ Scanned 11167996
+
+ returning request details- VM ID:1 Block No: 11167996
+Size = 4
+Completed VMID: 1, Block: (11167996)
+Completed VMID: 1, Block: (11167996)
+Completed VMID: 1, Block: (11167996)
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ Scanned 2014736
+
+ Scanned 4057360
+
+ Scanned 9772056
+
+ Scanned 11168000
+
+ returning request details- VM ID:1 Block No: 11168000
+Size = 4
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ Scanned 2014736
+
+ Scanned 4057360
+
+ Scanned 9772056
+
+ Scanned 11168000
+
+ returning request details- VM ID:1 Block No: 11168000
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ Scanned 2014736
+
+ Scanned 4057360
+
+ Scanned 9772056
+
+ returning request details- VM ID:1 Block No: 9772056
+Size = 4
+Completed VMID: 1, Block: (11168000)
+Completed VMID: 1, Block: (11168000)
+Completed VMID: 1, Block: (11168000)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (12475148) 
+
+ Scanned 869888
+
+ Scanned 4057360
+
+ Scanned 9772056
+
+ returning request details- VM ID:1 Block No: 9772056
+Completed VMID: 1, Block: (9772056)
+Completed VMID: 1, Block: (9772056)
+Completed VMID: 1, Block: (9772056)
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 
+
+ Scanned 869888
+
+ Scanned 4057360
+
+ returning request details- VM ID:1 Block No: 4057360
+Size = 4
+Completed VMID: 1, Block: (4057360)
+Completed VMID: 1, Block: (4057360)
+Completed VMID: 1, Block: (4057360)
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 2 (11353544) 1 (12475148) 
+
+ Scanned 869888
+
+ Scanned 4057436
+
+ returning request details- VM ID:1 Block No: 4057436
+Size = 4
+Completed VMID: 1, Block: (4057436)
+Completed VMID: 1, Block: (4057436)
+Completed VMID: 1, Block: (4057436)
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 2 (11353544) 1 (12475148) 2 (17843220) 
+
+ Scanned 869888
+
+ Scanned 4057520
+
+ returning request details- VM ID:1 Block No: 4057520
+Size = 4
+Completed VMID: 1, Block: (4057520)
+Completed VMID: 1, Block: (4057520)
+Completed VMID: 1, Block: (4057520)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (7597580) 1 (7806564) 1 (9974552) 2 (11353544) 1 (12475148) 3 (13701344) 2 (17843220) 
+
+ Scanned 11353544
+
+ Scanned 13701344
+
+ returning request details- VM ID:3 Block No: 13701344
+Size = 4
+Completed VMID: 3, Block: (13701344)
+Completed VMID: 3, Block: (13701344)
+Completed VMID: 3, Block: (13701344)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:500/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 2 (11353544) 1 (12475148) 2 (17843220) 
+
+ Scanned 3478568
+
+ Scanned 11353544
+
+ returning request details- VM ID:2 Block No: 11353544
+Size = 4
+Completed VMID: 2, Block: (11353544)
+Completed VMID: 2, Block: (11353544)
+Completed VMID: 2, Block: (11353544)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:500/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17843220) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17843220
+
+ returning request details- VM ID:2 Block No: 17843220
+Size = 4
+Completed VMID: 2, Block: (17843220)
+Completed VMID: 2, Block: (17843220)
+Completed VMID: 2, Block: (17843220)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:500/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871492) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17871492
+
+ returning request details- VM ID:3 Block No: 17871492
+Size = 8
+Completed VMID: 3, Block: (17871492)
+Completed VMID: 3, Block: (17871492)
+Completed VMID: 3, Block: (17871492)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17871500
+
+ returning request details- VM ID:3 Block No: 17871500
+Size = 8
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:300/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17871500
+
+ returning request details- VM ID:3 Block No: 17871500
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:300/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17871504
+
+ returning request details- VM ID:3 Block No: 17871504
+Size = 8
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:200/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 3 (17871504) 
+
+ Scanned 3478568
+
+ Scanned 17871504
+
+ returning request details- VM ID:3 Block No: 17871504
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:200/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 3 (17871504) 
+
+ Scanned 3478568
+
+ returning request details- VM ID:3 Block No: 3478568
+Size = 12
+Completed VMID: 3, Block: (17871500)
+Completed VMID: 3, Block: (17871500)
+Completed VMID: 3, Block: (17871500)
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:100/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871504) 3 (17871516) 2 (17871520) 
+
+ Scanned 3478568
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Size = 4
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871504) 3 (17871516) 2 (17871520) 
+
+ Scanned 17871520
+
+ returning request details- VM ID:2 Block No: 17871520
+Size = 4
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:0/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871504) 3 (17871516) 2 (17871520) 
+
+ Scanned 869888
+
+ Scanned 2014736
+
+ Scanned 7597580
+
+ Scanned 7806564
+
+ Scanned 12475148
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 10
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871504) 3 (17871516) 2 (17871520) 
+
+ Scanned 869888
+
+ Scanned 2014736
+
+ Scanned 7597580
+
+ Scanned 7806564
+
+ Scanned 12475148
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Completed VMID: 3, Block: (17871504)
+Completed VMID: 3, Block: (17871504)
+Completed VMID: 3, Block: (17871504)
+Length of sptf queue 10
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871520) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 10
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871520) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Completed VMID: 2, Block: (17871520)
+Completed VMID: 2, Block: (17871520)
+Completed VMID: 2, Block: (17871520)
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871516
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871524
+
+ returning request details- VM ID:2 Block No: 17871524
+Size = 4
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871524
+
+ returning request details- VM ID:2 Block No: 17871524
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ returning request details- VM ID:1 Block No: 7597580
+Size = 8
+Length of sptf queue 10
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 2 (17871548) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 17871548
+
+ returning request details- VM ID:2 Block No: 17871548
+Size = 12
+Length of sptf queue 10
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871524) 2 (17871548) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ returning request details- VM ID:1 Block No: 7597580
+Completed VMID: 3, Block: (17871516)
+Completed VMID: 3, Block: (17871516)
+Completed VMID: 3, Block: (17871516)
+Completed VMID: 2, Block: (17871524)
+Completed VMID: 2, Block: (17871524)
+Completed VMID: 2, Block: (17871524)
+Completed VMID: 2, Block: (17871548)
+Completed VMID: 2, Block: (17871548)
+Completed VMID: 2, Block: (17871548)
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 1 (7822400) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7822400
+
+ returning request details- VM ID:1 Block No: 7822400
+Size = 4
+Completed VMID: 1, Block: (7822400)
+Completed VMID: 1, Block: (7822400)
+Completed VMID: 1, Block: (7822400)
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (7806564) 2 (7822412) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 869888
+
+ Scanned 3478568
+
+ Scanned 7597580
+
+ Scanned 7806564
+
+ returning request details- VM ID:1 Block No: 7806564
+Size = 4
+Completed VMID: 1, Block: (7806564)
+Completed VMID: 1, Block: (7806564)
+Completed VMID: 1, Block: (7806564)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 2 (7822384) 2 (7822412) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 3478568
+
+ Scanned 7822384
+
+ returning request details- VM ID:2 Block No: 7822384
+Size = 4
+Completed VMID: 2, Block: (7822384)
+Completed VMID: 2, Block: (7822384)
+Completed VMID: 2, Block: (7822384)
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 2 (5641564) 1 (7597580) 2 (7822412) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 3478568
+
+ Scanned 5641564
+
+ Scanned 7822412
+
+ returning request details- VM ID:2 Block No: 7822412
+Size = 8
+Completed VMID: 2, Block: (7822412)
+Completed VMID: 2, Block: (7822412)
+Completed VMID: 2, Block: (7822412)
+Length of sptf queue 8
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:100/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 2 (5641564) 1 (7597580) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 3478568
+
+ Scanned 5641564
+
+ returning request details- VM ID:2 Block No: 5641564
+Size = 8
+Completed VMID: 2, Block: (5641564)
+Completed VMID: 2, Block: (5641564)
+Completed VMID: 2, Block: (5641564)
+Length of sptf queue 7
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:0/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (7597580) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 3478568
+
+ returning request details- VM ID:3 Block No: 3478568
+Completed VMID: 3, Block: (3478568)
+Completed VMID: 3, Block: (3478568)
+Completed VMID: 3, Block: (3478568)
+Length of sptf queue 6
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:0/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (7597580) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 869888
+
+ returning request details- VM ID:1 Block No: 869888
+Size = 8
+Completed VMID: 1, Block: (869888)
+Completed VMID: 1, Block: (869888)
+Completed VMID: 1, Block: (869888)
+Length of sptf queue 5
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (7597580) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 2014736
+
+ Scanned 7597580
+
+ returning request details- VM ID:1 Block No: 7597580
+Completed VMID: 1, Block: (7597580)
+Completed VMID: 1, Block: (7597580)
+Completed VMID: 1, Block: (7597580)
+Length of sptf queue 4
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 2014736
+
+ returning request details- VM ID:1 Block No: 2014736
+Size = 16
+Completed VMID: 1, Block: (2014736)
+Completed VMID: 1, Block: (2014736)
+Completed VMID: 1, Block: (2014736)
+Length of sptf queue 3
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (9974552) 1 (12475148) 1 (14073900) 
+
+ Scanned 9974552
+
+ returning request details- VM ID:1 Block No: 9974552
+Size = 8
+Completed VMID: 1, Block: (9974552)
+Completed VMID: 1, Block: (9974552)
+Completed VMID: 1, Block: (9974552)
+Length of sptf queue 2
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (12475148) 1 (14073900) 
+
+ Scanned 12475148
+
+ Scanned 14073900
+
+ returning request details- VM ID:1 Block No: 14073900
+Size = 8
+Completed VMID: 1, Block: (14073900)
+Completed VMID: 1, Block: (14073900)
+Completed VMID: 1, Block: (14073900)
+Completed VMID: 1, Block: (12475148)
+Completed VMID: 1, Block: (12475148)
+Completed VMID: 1, Block: (12475148)

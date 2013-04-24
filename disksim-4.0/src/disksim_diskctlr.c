@@ -431,7 +431,6 @@ static void disk_check_prefetch_swap (disk *currdisk)
 
 
 /* send completion up the line */
-
 static void disk_request_complete(disk *currdisk, 
 		diskreq *currdiskreq,
 		ioreq_event *curr)

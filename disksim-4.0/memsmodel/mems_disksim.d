@@ -44,5 +44,5 @@ mems_disksim.o: mems_disksim.c /usr/include/stdio.h \
  ../src//disksim_ioqueue.h ../diskmodel/dm.h ../diskmodel/dm_types.h \
  /usr/include/inttypes.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h \
  /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
- ../src//disksim_bus.h ../src//config.h modules/modules.h \
- modules/memsmodel_mems_param.h
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h ../src//disksim_bus.h \
+ ../src//config.h modules/modules.h modules/memsmodel_mems_param.h

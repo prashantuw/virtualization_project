@@ -37,7 +37,9 @@ disksim_diskcache.o: disksim_diskcache.c disksim_global.h \
  ../libparam/include/libparam/libparam.h \
  ../libparam/include/libparam/bitvector.h \
  ../libddbg/include/libddbg/libddbg.h disksim_bus.h disksim_controller.h \
- disksim_disk.h disksim_ioqueue.h ../diskmodel/include/diskmodel/dm.h \
+ disksim_disk.h disksim_ioqueue.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h \
+ ../diskmodel/include/diskmodel/dm.h \
  ../diskmodel/include/diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h

@@ -456,6 +456,7 @@ static void ioqueue_update_subqueue_statistics(subqueue *queue) {
 static void remove_tsps(iobuf *tmp);
 
 static void ioqueue_remove_from_subqueue(subqueue *queue, iobuf *tmp) {
+	print_request_info(tmp);
 	if (queue->sched_alg == TSPS) {
 		remove_tsps(tmp);
 	}
@@ -1288,19 +1289,68 @@ static iobuf * ioqueue_get_request_from_cyl_vscan_queue(subqueue *queue,
 	return (temp);
 }
 
+/* If all the requests in the queue belong to those VMs whose credits have
+ * expired, then reset credits of all VMs.
+ */
+void check_active_requests(subqueue *queue) {
+	iobuf *temp = queue->list->next;
+	int outerIndex, requestVMID, innerIndex;
+
+	/* Check if there is any active request in the queue whose VM has some shares left. */bool activeRequest =
+			false;
+	for (outerIndex = 0; outerIndex < queue->listlen; outerIndex++) {
+		// Get vmid from the request
+		requestVMID = temp->vmid;
+		// Iterate over all the VM's
+		for (innerIndex = 0; innerIndex < VM_IN_USE; innerIndex++) {
+			//  find the VM whose id matches the vmid of the request
+			if (requestVMID == VM_INFO_ARR[innerIndex].vmid) {
+				// Check the left over credits of the VM
+				if (VM_INFO_ARR[innerIndex].cur_shares > 0) {
+					if(READY_TO_GO(temp,queue)
+						&& (ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
+								temp))){
+					activeRequest = true;
+					break;
+					}
+				}
+			}
+		}
+		// If a request is found whose VM has some credits left over, break. We dont need
+		// to scan further.
+		if (activeRequest) {
+			break;
+		}
+		// Move to next request in the queue
+		temp = temp->next;
+	}
+	/* If no such request exists then reset shares of all the VMs.*/
+	if (!activeRequest) {
+		reset_vm_shares();
+	}
+}
+
 /* Prints current status of VM INFO queue */
-void print_vm_queue() {
+void print_vm_queue(subqueue *queue) {
 	int index;
+	iobuf *temp = queue->list->next;
+
+	printf("Length of sptf queue %d\n", queue->listlen);
 	for (index = 0; index < VM_IN_USE; index++) {
 		printf("VM ID: %d, Shares:%d/%d\n", VM_INFO_ARR[index].vmid,
 				VM_INFO_ARR[index].cur_shares, VM_INFO_ARR[index].max_shares);
 	}
-//	VM cur = VMHEAD;
-//	while ( cur != NULL )
-//	{
-//		printf("\n VM ID: %d, Shares:%d/%d",cur->vmid,cur->cur_shares,cur->max_shares);
-//		cur = cur->next;
-//	}
+	printf("Contents (VMIDs) in queue are:\n");
+
+	for (index = 0; index < queue->listlen; index++) {
+		printf("%d (%d) ", temp->vmid, temp->blkno);
+		temp = temp->next;
+	}
+	printf("\n");
+}
+
+void print_request_info(iobuf *temp){
+	printf("Completed VMID: %d, Block: (%d)\n", temp->vmid, temp->blkno);
 }
 
 /* Reduce the shares of VM with VMID by specified amount */
@@ -1318,17 +1368,6 @@ void reduce_shares(int vmid, int amount) {
 	if (total_shares <= 0) {
 		reset_vm_shares();
 	}
-
-//	VM cur = VMHEAD;
-//	while ( cur != NULL )
-//		{
-//			if ( cur->vmid == vmid )
-//			{
-//				cur->cur_shares = cur->cur_shares - amount;
-//				break;
-//			}
-//			cur = cur->next;
-//		}
 }
 
 /* Resets shares of all VMs. Done when all VMs have less than 0 Shares left */
@@ -1339,42 +1378,7 @@ void reset_vm_shares() {
 	for (index = 0; index < VM_IN_USE; index++) {
 		VM_INFO_ARR[index].cur_shares = VM_INFO_ARR[index].max_shares;
 	}
-//	VM curpos = VMHEAD;
-//	while (curpos != NULL)
-//		{
-//			curpos->cur_shares = curpos->max_shares;
-//			curpos=curpos->next;
-//		}
 }
-
-/* Returns which VM's IO request should be processed next, based on remaining shares
- int get_vm_to_run()
- {
- int maxshares = 0;
- VM pos = NULL;
- VM curpos = VMHEAD;
- int vmid;
- while (curpos != NULL)
- {
- if ( curpos->cur_shares > maxshares )
- {
- maxshares = curpos->cur_shares;
- pos = curpos;
- }
- curpos=curpos->next;
- }
- //Check if VM id is allocated, otherwise reassign max shares ans call this function again
- if (pos == NULL)
- {
- reset_vm_shares();
- vmid = get_vm_to_run();
- }
- else
- {
- vmid = pos->vmid;
- }
- return vmid;
- }*/
 
 /* Returns whether current request should be executed or not based on remaining shares */
 int get_vm_to_run(int vmid) {
@@ -1392,11 +1396,9 @@ int get_vm_to_run(int vmid) {
 }
 
 /* Queue contains >= 2 items when called */
-
 static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 		int checkcache, int ageweight, int posonly) {
-	printf("Length of sptf queue %d\n", queue->listlen);
-	print_vm_queue();
+	print_vm_queue(queue);
 	int i;
 	iobuf *temp;
 	iobuf *best = NULL;
@@ -1408,20 +1410,20 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 	double weight;
 	double temp_delay;
 	ioreq_event *tmp;
-
 	double age = 0.0;
-
-	//int vmtorun = get_vm_to_run();
 
 	ASSERT((ageweight >= 0) && (ageweight <= 3));
 	readdelay = queue->bigqueue->readdelay;
 	writedelay = queue->bigqueue->writedelay;
 	weight = (double) queue->bigqueue->to_time;
 	test = (ioreq_event *) getfromextraq();
-	temp = queue->list->next;
+
+	/* If all the requests in the queue belong to those VMs whose credits have
+	 * expired, then reset credits of all VMs. */
+	check_active_requests(queue);
 
 	// fprintf(outputfile, "get_request_from_sptf::  listlen = %d\n", queue->listlen);
-
+	temp = queue->list->next;
 	for (i = 0; i < queue->listlen; i++) {
 		// fprintf(outputfile, "temp->state = %d\n", temp->state);
 		if (READY_TO_GO(temp,queue)
@@ -1466,24 +1468,31 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 				// fprintf(outputfile, "get_request_from_sptf...::  blkno = %d, delay = %f\n", test->blkno, delay);
 
 				//	    fprintf(stderr,"serv %f old eff = %f new %f blkno %ld\n",temp_serv, mintime, delay,temp->blkno);
-				if (delay < mintime)// && get_vm_to_run(temp->vmid)) {
-				{
+				if ((delay < mintime) && get_vm_to_run(temp->vmid)) {
+					printf("\n Scanned %d\n", temp->blkno);
 					best = temp;
 					mintime = delay;
-					printf("\n In this attempt, VM %d should run\n", temp->vmid);
 				}
 			}
 		} else {
-			// fprintf(outputfile, "not READY_TO_GO\n");
+			//printf("not READY_TO_GO\n");
 		}
 
 		temp = temp->next;
 	}
 	addtoextraq((event *) test);
-	if(best != NULL){
-		printf("\n returning request details- VM ID:%d Block No: %d\n", best->vmid,
-			best->blkno);
-		reduce_shares(best->vmid, 100);
+	if (best != NULL ) {
+		printf("\n returning request details- VM ID:%d Block No: %d\n",
+				best->vmid, best->blkno);
+		if(best->evictedOnce == false){
+			reduce_shares(best->vmid, 100);
+			best->evictedOnce = true;
+			printf("Size = %d\n", best->totalsize);
+		}else{
+			//printf("\nNO credits deducted\n");
+		}
+	} else {
+		//printf("\n Nothing was selected\n");
 	}
 	/*
 	 fprintf (outputfile, "Selected request: %f, cylno %d, blkno %d, read %d, devno %d\n",
@@ -3123,7 +3132,7 @@ static ioreq_event * ioqueue_remove_completed_request(subqueue *queue,
 					}
 				}
 				batch_ptr = batch_ptr->batch_next;
-			}
+			} // While ends
 
 			tmp->reqcnt--;
 			queue->reqoutstanding--;
@@ -3155,7 +3164,7 @@ static ioreq_event * ioqueue_remove_completed_request(subqueue *queue,
 				}
 			}
 			return (done);
-		} else {
+		} else {  // If not BATCH_FCFS
 			trv = tmp->iolist;
 			ioqueue_remove_from_subqueue(queue, tmp);
 			queue->iobufcnt--;
@@ -3203,9 +3212,7 @@ static ioreq_event * ioqueue_remove_completed_request(subqueue *queue,
 	}
 	// tmp->batch_next = NULL;
 	addtoextraq((event *) tmp);
-	/*
-	 fprintf (outputfile, "Exiting remove_completed_request\n");
-	 */
+	/* fprintf (outputfile, "Exiting remove_completed_request\n"); */
 	return (trv);
 }
 
@@ -3362,6 +3369,7 @@ double ioqueue_add_new_request(ioqueue *queue, ioreq_event *new) {
 	tmp->vmid = new->vmid;
 	// Set the reference count to 0 initially
 	tmp->reference_count = 0;
+	tmp->evictedOnce = false;
 	tmp->starttime = -1.0;
 	tmp->state = WAITING;
 	tmp->next = NULL;
@@ -3962,7 +3970,7 @@ ioqueue * ioqueue_createdefaultqueue() {
 }
 
 /* ioqueue contructor using new parser
- * returns an allocated and initialized ioqueue on success 
+ * returns an allocated and initialized ioqueue on success
  * or NULL on failure */
 struct ioq *disksim_ioqueue_loadparams(struct lp_block *b, int printqueuestats,
 		int printcritstats, int printidlestats, int printintarrstats,

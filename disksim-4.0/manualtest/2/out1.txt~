@@ -1,0 +1,289 @@
+Index = 3, VM_IN_USE = 3
+Length of sptf queue 9
+VM ID: 1, Shares:300/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9974552) 1 (11167996) 1 (11168000) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 11167996
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 11168000
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 11168000
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (11168000) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 9772056
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7806564) 1 (9772056) 1 (9974552) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 9772056
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057360) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 
+
+ returning request details- VM ID:1 Block No: 4057360
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 2 (11353544) 1 (12475148) 
+
+ returning request details- VM ID:2 Block No: 11353544
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17843220) 
+
+ returning request details- VM ID:2 Block No: 17843220
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (13701344) 
+
+ returning request details- VM ID:3 Block No: 13701344
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:500/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 3 (3478568) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 
+
+ returning request details- VM ID:3 Block No: 3478568
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871504) 
+
+ returning request details- VM ID:3 Block No: 17871504
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:300/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871492) 
+
+ returning request details- VM ID:3 Block No: 17871492
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:200/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 
+
+ returning request details- VM ID:3 Block No: 17871500
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:100/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 
+
+ returning request details- VM ID:3 Block No: 17871500
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:0/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871500) 
+
+ returning request details- VM ID:1 Block No: 12475148
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:500/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 
+
+ returning request details- VM ID:3 Block No: 17871516
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 
+
+ returning request details- VM ID:1 Block No: 12475148
+Length of sptf queue 10
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871520) 
+
+ returning request details- VM ID:2 Block No: 17871520
+Length of sptf queue 10
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 3 (17871516) 2 (17871520) 
+
+ returning request details- VM ID:1 Block No: 12475148
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17871520) 2 (17871524) 
+
+ returning request details- VM ID:2 Block No: 17871524
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17871520) 2 (17871524) 
+
+ Nothing was selected
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17871524) 2 (17871548) 
+
+ returning request details- VM ID:2 Block No: 17871548
+Length of sptf queue 10
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 2 (17871524) 2 (17871548) 
+
+ Nothing was selected
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:400/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (9974552) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:1 Block No: 9974552
+Length of sptf queue 9
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 1 (7822400) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:1 Block No: 7822400
+Length of sptf queue 9
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (7806564) 2 (7822412) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:1 Block No: 7806564
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 2 (7822384) 2 (7822412) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:2 Block No: 7822384
+Length of sptf queue 9
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:400/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 2 (5641564) 1 (7597580) 2 (7822412) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:2 Block No: 7822412
+Length of sptf queue 8
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:300/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 2 (5641564) 1 (7597580) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:2 Block No: 5641564
+Length of sptf queue 7
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:200/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (12475148) 1 (14073900) 
+
+ returning request details- VM ID:1 Block No: 12475148
+Length of sptf queue 6
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 1 (14073900) 
+
+ returning request details- VM ID:1 Block No: 14073900
+Length of sptf queue 5
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057436) 1 (4057520) 1 (7597580) 
+
+ returning request details- VM ID:1 Block No: 4057436
+Length of sptf queue 4
+VM ID: 1, Shares:0/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (4057520) 1 (7597580) 
+
+ returning request details- VM ID:1 Block No: 4057520
+Length of sptf queue 3
+VM ID: 1, Shares:200/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (869888) 1 (2014736) 1 (7597580) 
+
+ returning request details- VM ID:1 Block No: 869888
+Length of sptf queue 2
+VM ID: 1, Shares:100/300
+VM ID: 2, Shares:500/500
+VM ID: 3, Shares:600/600
+Contents (VMIDs) in queue are:
+1 (2014736) 1 (7597580) 
+
+ returning request details- VM ID:1 Block No: 7597580

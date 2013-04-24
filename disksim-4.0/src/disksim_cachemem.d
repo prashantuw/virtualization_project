@@ -53,4 +53,5 @@ disksim_cachemem.o: disksim_cachemem.c modules/modules.h \
  disksim_ioqueue.h disksim_disk.h ../diskmodel/include/diskmodel/dm.h \
  ../diskmodel/include/diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
- /usr/include/i386-linux-gnu/bits/wchar.h disksim_cache.h
+ /usr/include/i386-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h disksim_cache.h

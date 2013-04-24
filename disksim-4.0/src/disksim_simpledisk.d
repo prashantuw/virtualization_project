@@ -41,4 +41,5 @@ disksim_simpledisk.o: disksim_simpledisk.c disksim_simpledisk.h \
  ../diskmodel/include/diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h \
  modules/disksim_simpledisk_param.h

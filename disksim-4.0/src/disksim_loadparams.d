@@ -36,7 +36,9 @@ disksim_loadparams.o: disksim_loadparams.c config.h inline.h \
  /usr/include/assert.h disksim_reqflags.h disksim_iodriver.h \
  disksim_iosim.h disksim_ioface.h disksim_device.h disksim_orgface.h \
  disksim_iotrace.h disksim_stat.h disksim_bus.h disksim_controller.h \
- disksim_disk.h disksim_ioqueue.h ../diskmodel/include/diskmodel/dm.h \
+ disksim_disk.h disksim_ioqueue.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h \
+ ../diskmodel/include/diskmodel/dm.h \
  ../diskmodel/include/diskmodel/dm_types.h /usr/include/inttypes.h \
  /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h modules/modules.h \

@@ -1049,6 +1049,7 @@ void disksim_initialize_vminfo_structure(char *vmconfig_file) {
 			VM_INFO_ARR[index].vmid = vmid;
 			VM_INFO_ARR[index].cur_shares = share;
 			VM_INFO_ARR[index].max_shares = share;
+			VM_INFO_ARR[index].requests_completed = 0;
 			index++;
 			//			VM newnode = malloc(sizeof(vm));
 			//			newnode->vmid = vmid;

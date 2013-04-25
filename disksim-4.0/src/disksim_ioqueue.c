@@ -456,7 +456,10 @@ static void ioqueue_update_subqueue_statistics(subqueue *queue) {
 static void remove_tsps(iobuf *tmp);
 
 static void ioqueue_remove_from_subqueue(subqueue *queue, iobuf *tmp) {
-	print_request_info(tmp);
+//	TODO: Uncomment
+//	print_request_info(tmp);
+	print_trace_data(tmp);
+
 	if (queue->sched_alg == TSPS) {
 		remove_tsps(tmp);
 	}
@@ -1296,8 +1299,8 @@ void check_active_requests(subqueue *queue) {
 	iobuf *temp = queue->list->next;
 	int outerIndex, requestVMID, innerIndex;
 
-	/* Check if there is any active request in the queue whose VM has some shares left. */bool activeRequest =
-			false;
+	/* Check if there is any active request in the queue whose VM has some shares left. */
+	bool activeRequest = false;
 	for (outerIndex = 0; outerIndex < queue->listlen; outerIndex++) {
 		// Get vmid from the request
 		requestVMID = temp->vmid;
@@ -1307,11 +1310,11 @@ void check_active_requests(subqueue *queue) {
 			if (requestVMID == VM_INFO_ARR[innerIndex].vmid) {
 				// Check the left over credits of the VM
 				if (VM_INFO_ARR[innerIndex].cur_shares > 0) {
-					if(READY_TO_GO(temp,queue)
-						&& (ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
-								temp))){
-					activeRequest = true;
-					break;
+					if (READY_TO_GO(temp,queue)
+							&& (ioqueue_seqstream_head(queue->bigqueue,
+									queue->list->next, temp))) {
+						activeRequest = true;
+						break;
 					}
 				}
 			}
@@ -1326,7 +1329,8 @@ void check_active_requests(subqueue *queue) {
 	}
 	/* If no such request exists then reset shares of all the VMs.*/
 	if (!activeRequest) {
-		reset_vm_shares();
+		printf("\nNo Active Request");
+		update_vm_shares();
 	}
 }
 
@@ -1343,14 +1347,40 @@ void print_vm_queue(subqueue *queue) {
 	printf("Contents (VMIDs) in queue are:\n");
 
 	for (index = 0; index < queue->listlen; index++) {
-		printf("%d (%d) ", temp->vmid, temp->blkno);
+		printf("%d (%d) State: %d\n", temp->vmid, temp->blkno, temp->state);
 		temp = temp->next;
 	}
 	printf("\n");
 }
 
-void print_request_info(iobuf *temp){
+void print_request_info(iobuf *temp) {
 	printf("Completed VMID: %d, Block: (%d)\n", temp->vmid, temp->blkno);
+}
+
+void print_trace_data(iobuf *tmp) {
+	static int counter = 0;
+	if (counter % 3 == 0) {
+		// Update the request_completed field for appropriate VM
+		int total_requests_processed = 0, i;
+		for (i = 0; i < VM_IN_USE; i++) {
+			if (tmp->vmid == VM_INFO_ARR[i].vmid) {
+				VM_INFO_ARR[i].requests_completed++;
+			}
+			// Update total_requests_processed
+			total_requests_processed += VM_INFO_ARR[i].requests_completed;
+		}
+
+		printf("VM%d\t Blk:%d\t Tot:%d\t", tmp->vmid, tmp->blkno,
+				total_requests_processed);
+		// Display percentage of requests processed for each VM
+		for (i = 0; i < VM_IN_USE; i++) {
+			printf("%.2lf\t",
+					VM_INFO_ARR[i].requests_completed * 100
+							/ (double) total_requests_processed);
+		}
+		printf("\n");
+	}
+	counter = (counter + 1) % 3;
 }
 
 /* Reduce the shares of VM with VMID by specified amount */
@@ -1366,10 +1396,35 @@ void reduce_shares(int vmid, int amount) {
 
 	// Check if shares of all VMs are 0 now. If yes, then reset shares.
 	if (total_shares <= 0) {
+		printf("\n All expired");
 		reset_vm_shares();
 	}
 }
 
+void update_vm_shares() {
+	// We can also think of an implementation where we add the left over
+	// shares too to the max_shares for a VM.
+	int amount = 1;
+	int index;
+	printf("\nCurrent Status:\n");
+	for (index = 0; index < VM_IN_USE; index++) {
+		printf("VM%d:%d\t", VM_INFO_ARR[index].vmid,
+				VM_INFO_ARR[index].cur_shares);
+	}
+	for (index = 0; index < VM_IN_USE; index++) {
+//		if(VM_INFO_ARR[index].cur_shares + amount <= VM_INFO_ARR[index].max_shares){
+//			VM_INFO_ARR[index].cur_shares += amount;
+//		}
+		VM_INFO_ARR[index].cur_shares += VM_INFO_ARR[index].max_shares;
+	}
+	printf("\n: Update\n");
+	printf("New Status:\n");
+	for (index = 0; index < VM_IN_USE; index++) {
+		printf("VM%d:%d\t", VM_INFO_ARR[index].vmid,
+				VM_INFO_ARR[index].cur_shares);
+	}
+	printf("\n");
+}
 /* Resets shares of all VMs. Done when all VMs have less than 0 Shares left */
 void reset_vm_shares() {
 	// We can also think of an implementation where we add the left over
@@ -1378,6 +1433,7 @@ void reset_vm_shares() {
 	for (index = 0; index < VM_IN_USE; index++) {
 		VM_INFO_ARR[index].cur_shares = VM_INFO_ARR[index].max_shares;
 	}
+	printf(": Reset\n");
 }
 
 /* Returns whether current request should be executed or not based on remaining shares */
@@ -1398,7 +1454,8 @@ int get_vm_to_run(int vmid) {
 /* Queue contains >= 2 items when called */
 static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 		int checkcache, int ageweight, int posonly) {
-	print_vm_queue(queue);
+//	TODO: Uncomment
+//	print_vm_queue(queue);
 	int i;
 	iobuf *temp;
 	iobuf *best = NULL;
@@ -1426,6 +1483,9 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 	temp = queue->list->next;
 	for (i = 0; i < queue->listlen; i++) {
 		// fprintf(outputfile, "temp->state = %d\n", temp->state);
+		printf("\nReady: %d\t SeqStream: %d\n", READY_TO_GO(temp,queue),
+									ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
+											temp));
 		if (READY_TO_GO(temp,queue)
 				&& (ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
 						temp))) {
@@ -1469,7 +1529,8 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 
 				//	    fprintf(stderr,"serv %f old eff = %f new %f blkno %ld\n",temp_serv, mintime, delay,temp->blkno);
 				if ((delay < mintime) && get_vm_to_run(temp->vmid)) {
-					printf("\n Scanned %d\n", temp->blkno);
+//					TODO: Uncomment
+//					printf("\n Scanned %d\n", temp->blkno);
 					best = temp;
 					mintime = delay;
 				}
@@ -1482,13 +1543,15 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 	}
 	addtoextraq((event *) test);
 	if (best != NULL ) {
-		printf("\n returning request details- VM ID:%d Block No: %d\n",
-				best->vmid, best->blkno);
-		if(best->evictedOnce == false){
-			reduce_shares(best->vmid, 100);
+//		TODO: Uncomment
+//		printf("\n returning request details- VM ID:%d Block No: %d\n",
+//				best->vmid, best->blkno);
+		if (best->evictedOnce == false) {
+			reduce_shares(best->vmid, 1);
 			best->evictedOnce = true;
-			printf("Size = %d\n", best->totalsize);
-		}else{
+//			TODO: Uncomment
+//			printf("Size = %d\n", best->totalsize);
+		} else {
 			//printf("\nNO credits deducted\n");
 		}
 	} else {

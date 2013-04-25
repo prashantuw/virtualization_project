@@ -257,14 +257,13 @@ struct vm_info{
 	int vmid;
 	int cur_shares;
 	int max_shares;
-	//struct vm *next;
+	// Keeps a track of how many requests for this VM have completed at any instance.
+	int requests_completed;
 };
 #define MAX_VM_ALLOWED 10
 struct vm_info VM_INFO_ARR[MAX_VM_ALLOWED];
 // This indicates that the number that are currently running on the VMM
 extern int VM_IN_USE;
-//typedef vm *VM;
-//VM VMHEAD; // Head of VM list
 
 #define DISKSIM_EVENT_SIZE	128
 #define DISKSIM_EVENT_SPACESIZE	(DISKSIM_EVENT_SIZE - sizeof(struct foo))

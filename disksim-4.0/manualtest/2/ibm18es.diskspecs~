@@ -15,7 +15,7 @@ disksim_disk IBM_DNES-309170W_validate {
    Never disconnect = 0,
    Print stats = 1,
    Avg sectors per cylinder = 1561,
-   Max queue length = 32,
+   Max queue length = 10,
    Scheduler = disksim_ioqueue {
       Scheduling policy = 8,
       Cylinder mapping strategy = 0,

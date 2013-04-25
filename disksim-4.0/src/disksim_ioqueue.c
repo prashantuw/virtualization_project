@@ -458,7 +458,7 @@ static void remove_tsps(iobuf *tmp);
 static void ioqueue_remove_from_subqueue(subqueue *queue, iobuf *tmp) {
 //	TODO: Uncomment
 //	print_request_info(tmp);
-	print_trace_data(tmp);
+//	print_trace_data(tmp);
 
 	if (queue->sched_alg == TSPS) {
 		remove_tsps(tmp);
@@ -1344,13 +1344,13 @@ void print_vm_queue(subqueue *queue) {
 		printf("VM ID: %d, Shares:%d/%d\n", VM_INFO_ARR[index].vmid,
 				VM_INFO_ARR[index].cur_shares, VM_INFO_ARR[index].max_shares);
 	}
-	printf("Contents (VMIDs) in queue are:\n");
-
-	for (index = 0; index < queue->listlen; index++) {
-		printf("%d (%d) State: %d\n", temp->vmid, temp->blkno, temp->state);
-		temp = temp->next;
-	}
-	printf("\n");
+//	printf("Contents (VMIDs) in queue are:\n");
+//
+//	for (index = 0; index < queue->listlen; index++) {
+//		printf("%d (%d) State: %d\n", temp->vmid, temp->blkno, temp->state);
+//		temp = temp->next;
+//	}
+//	printf("\n");
 }
 
 void print_request_info(iobuf *temp) {
@@ -1359,7 +1359,7 @@ void print_request_info(iobuf *temp) {
 
 void print_trace_data(iobuf *tmp) {
 	static int counter = 0;
-	if (counter % 3 == 0) {
+	//if (counter % 3 == 0) {
 		// Update the request_completed field for appropriate VM
 		int total_requests_processed = 0, i;
 		for (i = 0; i < VM_IN_USE; i++) {
@@ -1379,8 +1379,8 @@ void print_trace_data(iobuf *tmp) {
 							/ (double) total_requests_processed);
 		}
 		printf("\n");
-	}
-	counter = (counter + 1) % 3;
+//	}
+//	counter = (counter + 1) % 3;
 }
 
 /* Reduce the shares of VM with VMID by specified amount */
@@ -1483,9 +1483,9 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 	temp = queue->list->next;
 	for (i = 0; i < queue->listlen; i++) {
 		// fprintf(outputfile, "temp->state = %d\n", temp->state);
-		printf("\nReady: %d\t SeqStream: %d\n", READY_TO_GO(temp,queue),
-									ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
-											temp));
+//		printf("\nReady: %d\t SeqStream: %d\n", READY_TO_GO(temp,queue),
+//									ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
+//											temp));
 		if (READY_TO_GO(temp,queue)
 				&& (ioqueue_seqstream_head(queue->bigqueue, queue->list->next,
 						temp))) {
@@ -1547,6 +1547,8 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 //		printf("\n returning request details- VM ID:%d Block No: %d\n",
 //				best->vmid, best->blkno);
 		if (best->evictedOnce == false) {
+//			print_vm_queue(queue);
+			print_trace_data(best);
 			reduce_shares(best->vmid, 1);
 			best->evictedOnce = true;
 //			TODO: Uncomment

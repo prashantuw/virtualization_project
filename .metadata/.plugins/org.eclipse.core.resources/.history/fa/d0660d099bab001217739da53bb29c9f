@@ -1,0 +1,13 @@
+/*
+ * shared.h
+ *
+ *  Created on: Apr 22, 2013
+ *      Author: rohit
+ */
+
+#ifndef SHARED_H_
+#define SHARED_H_
+
+extern int VM_IN_USE;
+
+#endif /* SHARED_H_ */

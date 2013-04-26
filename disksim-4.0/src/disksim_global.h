@@ -255,10 +255,11 @@ typedef struct foo {
 
 struct vm_info{
 	int vmid;
-	int cur_shares;
-	int max_shares;
+	double cur_shares;
+	double max_shares;
 	// Keeps a track of how many requests for this VM have completed at any instance.
 	int requests_completed;
+	int blocks_transferred;
 };
 #define MAX_VM_ALLOWED 10
 struct vm_info VM_INFO_ARR[MAX_VM_ALLOWED];
@@ -439,6 +440,8 @@ typedef struct disksim {
   FILE *exectrace;
   char *exectrace_fn;
 
+  char   vmConfigFilename[256];
+  enum { NUM_REQUESTS, EXECUTION_TIME } shares_mode;
 } disksim_t;
 
 extern disksim_t *disksim;
@@ -449,6 +452,7 @@ extern disksim_t *disksim;
 #define statdeffile      (disksim->statdeffile)
 #define outputfile       (disksim->outputfile)
 #define outios           (disksim->outios)
+#define vmConfigFilename (disksim->vmConfigFilename)
 
 
 #ifndef _WIN32

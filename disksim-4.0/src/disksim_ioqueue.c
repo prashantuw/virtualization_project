@@ -105,6 +105,8 @@
 #include "modules/modules.h"
 #include <stdbool.h>
 
+#define RED_FACTOR 0.25
+
 // schlos - i'm going to have to modify this to account for batched queues
 #define READY_TO_GO(iobufptr,queue) ( \
                                      ((iobufptr)->state == WAITING) && \
@@ -1298,9 +1300,9 @@ static iobuf * ioqueue_get_request_from_cyl_vscan_queue(subqueue *queue,
 void check_active_requests(subqueue *queue) {
 	iobuf *temp = queue->list->next;
 	int outerIndex, requestVMID, innerIndex;
-
-	/* Check if there is any active request in the queue whose VM has some shares left. */
-	bool activeRequest = false;
+	printf("\n");
+	/* Check if there is any active request in the queue whose VM has some shares left. */bool activeRequest =
+			false;
 	for (outerIndex = 0; outerIndex < queue->listlen; outerIndex++) {
 		// Get vmid from the request
 		requestVMID = temp->vmid;
@@ -1315,6 +1317,11 @@ void check_active_requests(subqueue *queue) {
 									queue->list->next, temp))) {
 						activeRequest = true;
 						break;
+					} else {
+						printf("Not ready VM%d, %d, %d\n", temp->vmid,
+								READY_TO_GO(temp,queue),
+								ioqueue_seqstream_head(queue->bigqueue,
+										queue->list->next, temp));
 					}
 				}
 			}
@@ -1327,10 +1334,12 @@ void check_active_requests(subqueue *queue) {
 		// Move to next request in the queue
 		temp = temp->next;
 	}
+	printf("\n");
 	/* If no such request exists then reset shares of all the VMs.*/
 	if (!activeRequest) {
 		printf("\nNo Active Request");
-		update_vm_shares();
+		print_vm_queue(queue);
+		update_vm_shares(queue);
 	}
 }
 
@@ -1339,18 +1348,13 @@ void print_vm_queue(subqueue *queue) {
 	int index;
 	iobuf *temp = queue->list->next;
 
-	printf("Length of sptf queue %d\n", queue->listlen);
-	for (index = 0; index < VM_IN_USE; index++) {
-		printf("VM ID: %d, Shares:%d/%d\n", VM_INFO_ARR[index].vmid,
-				VM_INFO_ARR[index].cur_shares, VM_INFO_ARR[index].max_shares);
+	printf("\nLength of sptf queue %d\n", queue->listlen);
+
+	for (index = 0; index < queue->listlen; index++) {
+		printf("VM%d ,", temp->vmid);
+		temp = temp->next;
 	}
-//	printf("Contents (VMIDs) in queue are:\n");
-//
-//	for (index = 0; index < queue->listlen; index++) {
-//		printf("%d (%d) State: %d\n", temp->vmid, temp->blkno, temp->state);
-//		temp = temp->next;
-//	}
-//	printf("\n");
+	printf("\n");
 }
 
 void print_request_info(iobuf *temp) {
@@ -1358,19 +1362,20 @@ void print_request_info(iobuf *temp) {
 }
 
 void print_trace_data(iobuf *tmp) {
-	static int counter = 0;
-	//if (counter % 3 == 0) {
-		// Update the request_completed field for appropriate VM
-		int total_requests_processed = 0, i;
-		for (i = 0; i < VM_IN_USE; i++) {
-			if (tmp->vmid == VM_INFO_ARR[i].vmid) {
-				VM_INFO_ARR[i].requests_completed++;
-			}
-			// Update total_requests_processed
-			total_requests_processed += VM_INFO_ARR[i].requests_completed;
+	// Update the request_completed field for appropriate VM
+	int total_requests_processed = 0, i, total_blocks_processed = 0;
+	for (i = 0; i < VM_IN_USE; i++) {
+		if (tmp->vmid == VM_INFO_ARR[i].vmid) {
+			VM_INFO_ARR[i].requests_completed++;
+			VM_INFO_ARR[i].blocks_transferred += tmp->totalsize;
 		}
+		// Update total_requests_processed
+		total_requests_processed += VM_INFO_ARR[i].requests_completed;
+		total_blocks_processed += VM_INFO_ARR[i].blocks_transferred;
+	}
 
-		printf("VM%d\t Blk:%d\t Tot:%d\t", tmp->vmid, tmp->blkno,
+	if (disksim->shares_mode == NUM_REQUESTS) {
+		printf("VM%d\t Blk:%d\t Tot-Req:%d\t", tmp->vmid, tmp->blkno,
 				total_requests_processed);
 		// Display percentage of requests processed for each VM
 		for (i = 0; i < VM_IN_USE; i++) {
@@ -1378,53 +1383,84 @@ void print_trace_data(iobuf *tmp) {
 					VM_INFO_ARR[i].requests_completed * 100
 							/ (double) total_requests_processed);
 		}
-		printf("\n");
-//	}
-//	counter = (counter + 1) % 3;
+	} else {
+		printf("VM%d\t Blk:%d\t Tot-Req:%d\t Tot-Blks:%d\t", tmp->vmid,
+				tmp->blkno, total_requests_processed, total_blocks_processed);
+		// Display percentage of data blocks processed processed for each VM
+		for (i = 0; i < VM_IN_USE; i++) {
+			printf("%.2lf\t",
+					VM_INFO_ARR[i].blocks_transferred * 100
+							/ (double) total_blocks_processed);
+		}
+	}
+	printf("\n");
 }
 
 /* Reduce the shares of VM with VMID by specified amount */
-void reduce_shares(int vmid, int amount) {
+void reduce_shares(int vmid, double reductionAmount) {
 	int index;
-	int total_shares = 0;
+//	double total_shares = 0;
+	bool positive_share = false;
+
 	for (index = 0; index < VM_IN_USE; index++) {
 		if (VM_INFO_ARR[index].vmid == vmid) {
-			VM_INFO_ARR[index].cur_shares -= amount;
+			VM_INFO_ARR[index].cur_shares -= reductionAmount;
 		}
-		total_shares += VM_INFO_ARR[index].cur_shares;
+//		total_shares += VM_INFO_ARR[index].cur_shares;
+		if(VM_INFO_ARR[index].cur_shares > 0){
+			positive_share = true;
+		}
 	}
 
-	// Check if shares of all VMs are 0 now. If yes, then reset shares.
-	if (total_shares <= 0) {
+	// Check if shares of all VMs are less than 0 now. If yes, then reset shares.
+//	if (total_shares <= 0) {
+//		printf("\n All expired");
+//		reset_vm_shares();
+//	}
+	if(!positive_share){
 		printf("\n All expired");
 		reset_vm_shares();
 	}
 }
 
-void update_vm_shares() {
+void update_vm_shares(subqueue *queue) {
 	// We can also think of an implementation where we add the left over
 	// shares too to the max_shares for a VM.
-	int amount = 1;
-	int index;
+	iobuf *temp = queue->list->next;
+	int amount = 1, index, max = 0;
+	double update_factor;
+
 	printf("\nCurrent Status:\n");
 	for (index = 0; index < VM_IN_USE; index++) {
-		printf("VM%d:%d\t", VM_INFO_ARR[index].vmid,
+		printf("VM%d:%.3lf\t", VM_INFO_ARR[index].vmid,
 				VM_INFO_ARR[index].cur_shares);
 	}
-	for (index = 0; index < VM_IN_USE; index++) {
-//		if(VM_INFO_ARR[index].cur_shares + amount <= VM_INFO_ARR[index].max_shares){
-//			VM_INFO_ARR[index].cur_shares += amount;
-//		}
-		VM_INFO_ARR[index].cur_shares += VM_INFO_ARR[index].max_shares;
+
+	if (disksim->shares_mode == EXECUTION_TIME) {
+		for (index = 0; index < queue->listlen; index++) {
+			if (temp->totalsize > max) {
+				max = temp->totalsize;
+			}
+			temp = temp->next;
+		}
+		update_factor = max * RED_FACTOR;
+	} else {
+		update_factor = 1;
 	}
-	printf("\n: Update\n");
-	printf("New Status:\n");
+
+	// Update Shares
 	for (index = 0; index < VM_IN_USE; index++) {
-		printf("VM%d:%d\t", VM_INFO_ARR[index].vmid,
+		VM_INFO_ARR[index].cur_shares += update_factor;	//VM_INFO_ARR[index].max_shares;
+	}
+
+	printf("\nNew Status:\n");
+	for (index = 0; index < VM_IN_USE; index++) {
+		printf("VM%d:%.3lf\t", VM_INFO_ARR[index].vmid,
 				VM_INFO_ARR[index].cur_shares);
 	}
 	printf("\n");
 }
+
 /* Resets shares of all VMs. Done when all VMs have less than 0 Shares left */
 void reset_vm_shares() {
 	// We can also think of an implementation where we add the left over
@@ -1526,11 +1562,8 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 				}
 
 				// fprintf(outputfile, "get_request_from_sptf...::  blkno = %d, delay = %f\n", test->blkno, delay);
-
 				//	    fprintf(stderr,"serv %f old eff = %f new %f blkno %ld\n",temp_serv, mintime, delay,temp->blkno);
 				if ((delay < mintime) && get_vm_to_run(temp->vmid)) {
-//					TODO: Uncomment
-//					printf("\n Scanned %d\n", temp->blkno);
 					best = temp;
 					mintime = delay;
 				}
@@ -1549,10 +1582,12 @@ static iobuf *ioqueue_get_request_from_opt_sptf_queue(subqueue *queue,
 		if (best->evictedOnce == false) {
 //			print_vm_queue(queue);
 			print_trace_data(best);
-			reduce_shares(best->vmid, 1);
+			if (disksim->shares_mode == EXECUTION_TIME) {
+				reduce_shares(best->vmid, best->totalsize * RED_FACTOR);
+			} else {
+				reduce_shares(best->vmid, 1);
+			}
 			best->evictedOnce = true;
-//			TODO: Uncomment
-//			printf("Size = %d\n", best->totalsize);
 		} else {
 			//printf("\nNO credits deducted\n");
 		}

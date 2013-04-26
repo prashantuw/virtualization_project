@@ -425,13 +425,13 @@ OVERALL I/O SYSTEM STATISTICS
 
 Overall I/O System Total Requests handled:	671
 Overall I/O System Requests per second:   	99.099099
-Overall I/O System Completely idle time:  	2408.912495   	0.355769
-Overall I/O System Response time average: 	1877.626434
-Overall I/O System Response time std.dev.:	1039.666647
-Overall I/O System Response time maximum:	3743.087505
+Overall I/O System Completely idle time:  	1945.770932   	0.287368
+Overall I/O System Response time average: 	2049.277921
+Overall I/O System Response time std.dev.:	1187.867783
+Overall I/O System Response time maximum:	4475.516517
 Overall I/O System Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
+      0       0       1       4       4       7       6       5       9     635 
 Overall I/O System Overlaps combined:     	0	0.000000
 Overall I/O System Read overlaps combined:	0	0.000000	0.000000
 Overall I/O System Critical Reads:      	     0  	0.000000
@@ -442,12 +442,12 @@ Overall I/O System Critical Read Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
       0       0       0       0       0       0       0       0       0       0 
 Overall I/O System Non-Critical Reads:  	   671  	0.998512
-Overall I/O System Non-Critical Read Response time average: 	1877.626434
-Overall I/O System Non-Critical Read Response time std.dev.:	1039.666647
-Overall I/O System Non-Critical Read Response time maximum:	3743.087505
+Overall I/O System Non-Critical Read Response time average: 	2049.277921
+Overall I/O System Non-Critical Read Response time std.dev.:	1187.867783
+Overall I/O System Non-Critical Read Response time maximum:	4475.516517
 Overall I/O System Non-Critical Read Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
+      0       0       1       4       4       7       6       5       9     635 
 Overall I/O System Critical Writes:     	     0  	0.000000
 Overall I/O System Critical Write Response time average: 	0.000000
 Overall I/O System Critical Write Response time std.dev.:	0.000000
@@ -469,25 +469,25 @@ Overall I/O System Sequential writes:       0  	0.000000  	0.000000
 Overall I/O System Base SPTF/SDF Different:      0 /      0 	0.000000
 Overall I/O System Timeout SPTF/SDF Different:      0 /      0 	0.000000
 Overall I/O System Priority SPTF/SDF Different:      0 /      0 	0.000000
-Overall I/O System runlistlen:              1259887.337121
+Overall I/O System runlistlen:              1375065.484762
 Overall I/O System runoutstanding:          0.000000
 Overall I/O System simtime:                 6771.000000
 Overall I/O System warmuptime:              0.000000
 Overall I/O System setsize:                 1
-Overall I/O System Average # requests:      186.071088
-Overall I/O System Maximum # requests:      563
+Overall I/O System Average # requests:      203.081596
+Overall I/O System Maximum # requests:      561
 Overall I/O System End # requests:          1
-Overall I/O System Average queue length:    186.071088
-Overall I/O System Maximum queue length:    563
+Overall I/O System Average queue length:    203.081596
+Overall I/O System Maximum queue length:    561
 Overall I/O System End queued requests:     1
-Overall I/O System Queue time average: 	1877.626434
-Overall I/O System Queue time std.dev.:	1039.666647
-Overall I/O System Queue time maximum:	3743.087505
+Overall I/O System Queue time average: 	2049.277921
+Overall I/O System Queue time std.dev.:	1187.867783
+Overall I/O System Queue time maximum:	4475.516517
 Overall I/O System Queue time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
-Overall I/O System Avg # read requests:     186.071088
-Overall I/O System Max # read requests:     563
+      0       0       1       4       4       7       6       5       9     635 
+Overall I/O System Avg # read requests:     203.081596
+Overall I/O System Max # read requests:     561
 Overall I/O System Avg # write requests:    0.000000
 Overall I/O System Max # write requests:    0
 Overall I/O System Physical access time average: 	0.000000
@@ -2308,9 +2308,9 @@ Overall I/O System Write inter-arrival distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
       0       0       0       0       0       0       0       0       0       0 
 Overall I/O System Number of idle periods:  2
-Overall I/O System Idle period length average: 	1204.456247
-Overall I/O System Idle period length std.dev.:	1104.456247
-Overall I/O System Idle period length maximum:	2308.912495
+Overall I/O System Idle period length average: 	972.885466
+Overall I/O System Idle period length std.dev.:	872.885466
+Overall I/O System Idle period length maximum:	1845.770932
 Overall I/O System Idle period length distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
       0       0       0       0       0       0       0       0       0       2 
@@ -2332,9 +2332,9 @@ Overall I/O System Write request size maximum:	0
 Overall I/O System Write request size distribution
    =  1    =  2    =  3    =  4    <  7    <  9    < 13    < 17    < 21     21+
       0       0       0       0       0       0       0       0       0       0 
-Overall I/O System Instantaneous queue length average: 	290.921013
-Overall I/O System Instantaneous queue length std.dev.:	155.665921
-Overall I/O System Instantaneous queue length maximum:	563
+Overall I/O System Instantaneous queue length average: 	289.098361
+Overall I/O System Instantaneous queue length std.dev.:	154.301047
+Overall I/O System Instantaneous queue length maximum:	561
 Overall I/O System Instantaneous queue length distribution
    =  1    =  2    =  3    <  6    < 10    < 20    < 40    < 80    <150    150+
       1       1       1       2       4      10      20      40      71     521 
@@ -2353,16 +2353,16 @@ System logorg #0 Number of requests:       672
 System logorg #0 Number of read requests:  672  	1.000000
 System logorg #0 Number of accesses:       672
 System logorg #0 Number of read accesses:  672  	1.000000
-System logorg #0 Average outstanding:      186.071088
-System logorg #0 Maximum outstanding:      563
-System logorg #0 Avg nonzero outstanding:  288.826700
-System logorg #0 Completely idle time:     2408.912495
-System logorg #0 Response time average: 	1877.626434
-System logorg #0 Response time std.dev.:	1039.667089
-System logorg #0 Response time maximum:	3743.087505
+System logorg #0 Average outstanding:      203.081596
+System logorg #0 Maximum outstanding:      561
+System logorg #0 Avg nonzero outstanding:  284.974136
+System logorg #0 Completely idle time:     1945.770932
+System logorg #0 Response time average: 	2049.277921
+System logorg #0 Response time std.dev.:	1187.884914
+System logorg #0 Response time maximum:	4475.516517
 System logorg #0 Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
+      0       0       1       4       4       7       6       5       9     635 
 System logorg #0 Time-critical reads:  0
 System logorg #0 Time-critical writes: 0
 System logorg #0 Inter-arrival time average: 	10.075893
@@ -2456,79 +2456,79 @@ System logorg #0 Write request size distribution
    =  1    =  2    =  3    =  4    <  7    <  9    < 13    < 17    < 21     21+
       0       0       0       0       0       0       0       0       0       0 
 System logorg #0 Number of idle periods:	2
-System logorg #0 Idle period length average: 	1204.456247
-System logorg #0 Idle period length std.dev.:	1104.456247
-System logorg #0 Idle period length maximum:	2308.912495
+System logorg #0 Idle period length average: 	972.885466
+System logorg #0 Idle period length std.dev.:	872.885466
+System logorg #0 Idle period length maximum:	1845.770932
 System logorg #0 Idle period length distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
       0       0       0       0       0       0       0       0       0       2 
-System logorg #0 disk Seeks of zero distance:	117	0.188103
-System logorg #0 disk Seek distance average: 	1441.667203
-System logorg #0 disk Seek distance std.dev.:	1943.967149
-System logorg #0 disk Seek distance maximum:	10892
+System logorg #0 disk Seeks of zero distance:	110	0.177419
+System logorg #0 disk Seek distance average: 	1581.651613
+System logorg #0 disk Seek distance std.dev.:	2179.051559
+System logorg #0 disk Seek distance maximum:	10971
 System logorg #0 disk Seek distance distribution
    =  0    <  6    < 21    < 41    < 81    <161    <321    <641    <1281    1281+
-    117      12       8      19      22      32      44      54      96     218 
-System logorg #0 disk Seek time average: 	3.953388
-System logorg #0 disk Seek time std.dev.:	2.734759
-System logorg #0 disk Seek time maximum:	12.388240
+    110       8       9      12      19      38      44      73      84     223 
+System logorg #0 disk Seek time average: 	4.223542
+System logorg #0 disk Seek time std.dev.:	2.863438
+System logorg #0 disk Seek time maximum:	12.428470
 System logorg #0 disk Seek time distribution
    <  0    <  1    <  2    <  3    <  4    <  5    <  6    <  7    <  8      8+
-      0     117      37      79      49     138      83      28      49      42 
+      0     110      27      74      48     146      74      42      38      61 
 System logorg #0 disk Full rotation time:      8.333333
 System logorg #0 disk Zero rotate latency:	0	0.000000
-System logorg #0 disk Rotational latency average: 	2.238501
-System logorg #0 disk Rotational latency std.dev.:	2.220924
-System logorg #0 disk Rotational latency maximum:	8.324019
+System logorg #0 disk Rotational latency average: 	2.737229
+System logorg #0 disk Rotational latency std.dev.:	2.478877
+System logorg #0 disk Rotational latency maximum:	8.332849
 System logorg #0 disk Rotational latency distribution
    <  1    <  3    <  5    <  7    <  8    <  9    < 11    < 13    < 15     15+
-    228     232      84      27      30      21       0       0       0       0 
-System logorg #0 disk Transfer time average: 	0.197655
-System logorg #0 disk Transfer time std.dev.:	0.231695
-System logorg #0 disk Transfer time maximum:	2.539448
+    207     190     101      53      44      25       0       0       0       0 
+System logorg #0 disk Transfer time average: 	0.197194
+System logorg #0 disk Transfer time std.dev.:	0.220678
+System logorg #0 disk Transfer time maximum:	1.890909
 System logorg #0 disk Transfer time distribution
   < 0.5   < 1.0   < 1.5   < 2.0   < 2.5   < 3.0   < 4.0   < 5.0   < 6.0     60+
-    595      14       6       6       0       1       0       0       0       0 
-System logorg #0 disk Positioning time average: 	6.191889
-System logorg #0 disk Positioning time std.dev.:	3.644012
-System logorg #0 disk Positioning time maximum:	19.540721
+    594      13       6       7       0       0       0       0       0       0 
+System logorg #0 disk Positioning time average: 	6.960771
+System logorg #0 disk Positioning time std.dev.:	4.083167
+System logorg #0 disk Positioning time maximum:	19.927426
 System logorg #0 disk Positioning time distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
-    251     281      74      16       0       0       0       0       0       0 
-System logorg #0 disk Access time average: 	6.389544
-System logorg #0 disk Access time std.dev.:	3.641637
-System logorg #0 disk Access time maximum:	19.626171
+    226     256     102      36       0       0       0       0       0       0 
+System logorg #0 disk Access time average: 	7.157965
+System logorg #0 disk Access time std.dev.:	4.077633
+System logorg #0 disk Access time maximum:	20.012875
 System logorg #0 disk Access time distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
-    227     302      76      17       0       0       0       0       0       0 
+    203     276     101      39       1       0       0       0       0       0 
 System logorg #0 disk Number of buffer accesses:    671
-System logorg #0 disk Buffer hit ratio:            53 	0.078987
-System logorg #0 disk Buffer miss ratio:               618 	0.921013
-System logorg #0 disk Buffer read hit ratio:            49 	0.073025 	0.073025
+System logorg #0 disk Buffer hit ratio:            54 	0.080477
+System logorg #0 disk Buffer miss ratio:               617 	0.919523
+System logorg #0 disk Buffer read hit ratio:            50 	0.074516 	0.074516
 System logorg #0 disk Buffer prepend hit ratio:            0 	0.000000
 System logorg #0 disk Buffer append hit ratio:            0 	0.000000
 System logorg #0 disk Write combinations:                0 	0.000000
-System logorg #0 disk Ongoing read-ahead hit ratio:      0 	0.000000 	0.000000
-System logorg #0 disk Average read-ahead hit size:  0.000000
-System logorg #0 disk Average remaining read-ahead: 0.000000
-System logorg #0 disk Partial read hit ratio:      4 	0.005961 	0.005961
-System logorg #0 disk Average partial hit size:     5.000000
-System logorg #0 disk Average remaining partial:    4.000000
-System logorg #0 disk Total disk bus wait time: 12.866790
-System logorg #0 disk Number of disk bus waits: 688
+System logorg #0 disk Ongoing read-ahead hit ratio:      1 	0.001490 	0.001490
+System logorg #0 disk Average read-ahead hit size:  13.000000
+System logorg #0 disk Average remaining read-ahead: 3.000000
+System logorg #0 disk Partial read hit ratio:      3 	0.004471 	0.004471
+System logorg #0 disk Average partial hit size:     5.333333
+System logorg #0 disk Average remaining partial:    5.333333
+System logorg #0 disk Total disk bus wait time: 13.371370
+System logorg #0 disk Number of disk bus waits: 687
 
 IODRIVER STATISTICS
 -------------------
 
 IOdriver Total Requests handled:	671
 IOdriver Requests per second:   	99.099099
-IOdriver Completely idle time:  	2408.912495   	0.355769
-IOdriver Response time average: 	1877.626434
-IOdriver Response time std.dev.:	1039.667089
-IOdriver Response time maximum:	3743.087505
+IOdriver Completely idle time:  	1945.770932   	0.287368
+IOdriver Response time average: 	2049.277921
+IOdriver Response time std.dev.:	1187.884914
+IOdriver Response time maximum:	4475.516517
 IOdriver Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
+      0       0       1       4       4       7       6       5       9     635 
 IOdriver Overlaps combined:     	0	0.000000
 IOdriver Read overlaps combined:	0	0.000000	0.000000
 IOdriver Critical Reads:      	     0  	0.000000
@@ -2539,12 +2539,12 @@ IOdriver Critical Read Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
       0       0       0       0       0       0       0       0       0       0 
 IOdriver Non-Critical Reads:  	   671  	0.998512
-IOdriver Non-Critical Read Response time average: 	1877.626434
-IOdriver Non-Critical Read Response time std.dev.:	1039.667089
-IOdriver Non-Critical Read Response time maximum:	3743.087505
+IOdriver Non-Critical Read Response time average: 	2049.277921
+IOdriver Non-Critical Read Response time std.dev.:	1187.884914
+IOdriver Non-Critical Read Response time maximum:	4475.516517
 IOdriver Non-Critical Read Response time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-      0       0       1       4       4       7       6       5       5     639 
+      0       0       1       4       4       7       6       5       9     635 
 IOdriver Critical Writes:     	     0  	0.000000
 IOdriver Critical Write Response time average: 	0.000000
 IOdriver Critical Write Response time std.dev.:	0.000000
@@ -2566,30 +2566,30 @@ IOdriver Sequential writes:       0  	0.000000  	0.000000
 IOdriver Base SPTF/SDF Different:      0 /    672 	0.000000
 IOdriver Timeout SPTF/SDF Different:      0 /      0 	0.000000
 IOdriver Priority SPTF/SDF Different:      0 /      0 	0.000000
-IOdriver runlistlen:              1259887.337121
-IOdriver runoutstanding:          136137.712826
+IOdriver runlistlen:              1375065.484762
+IOdriver runoutstanding:          150330.313620
 IOdriver simtime:                 6771.000000
 IOdriver warmuptime:              0.000000
 IOdriver setsize:                 1
-IOdriver Average # requests:      186.071088
-IOdriver Maximum # requests:      563
+IOdriver Average # requests:      203.081596
+IOdriver Maximum # requests:      561
 IOdriver End # requests:          1
-IOdriver Average queue length:    165.965090
-IOdriver Maximum queue length:    531
+IOdriver Average queue length:    180.879511
+IOdriver Maximum queue length:    529
 IOdriver End queued requests:     0
-IOdriver Queue time average: 	1672.246465
-IOdriver Queue time std.dev.:	1021.514569
-IOdriver Queue time maximum:	3484.796875
+IOdriver Queue time average: 	1822.522576
+IOdriver Queue time std.dev.:	1158.168996
+IOdriver Queue time maximum:	3909.325256
 IOdriver Queue time distribution
    <  5    < 10    < 20    < 40    < 60    < 90    <120    <150    <200    200+
-     33       0       2       3       4       9       5       4       7     605 
-IOdriver Avg # read requests:     186.071088
-IOdriver Max # read requests:     563
+     33       0       2       3       4       9       5       4       9     603 
+IOdriver Avg # read requests:     203.081596
+IOdriver Max # read requests:     561
 IOdriver Avg # write requests:    0.000000
 IOdriver Max # write requests:    0
-IOdriver Physical access time average: 	202.887799
-IOdriver Physical access time std.dev.:	277.736638
-IOdriver Physical access time maximum:	2142.524444
+IOdriver Physical access time average: 	224.039216
+IOdriver Physical access time std.dev.:	376.303546
+IOdriver Physical access time maximum:	3377.920349
 IOdriver Physical access time distribution
  0.000  	      0  	0.000000  	0.000000
  0.001  	      0  	0.000000  	0.000000
@@ -2946,758 +2946,758 @@ IOdriver Physical access time distribution
  1.832  	      0  	0.000000  	0.000000
  1.851  	      0  	0.000000  	0.000000
  1.870  	      0  	0.000000  	0.000000
- 1.889  	      0  	0.000000  	0.000000
- 1.908  	      0  	0.000000  	0.000000
- 1.928  	      0  	0.000000  	0.000000
- 1.948  	      0  	0.000000  	0.000000
- 1.968  	      0  	0.000000  	0.000000
- 1.988  	      0  	0.000000  	0.000000
- 2.008  	      0  	0.000000  	0.000000
- 2.029  	      0  	0.000000  	0.000000
- 2.050  	      0  	0.000000  	0.000000
- 2.071  	      0  	0.000000  	0.000000
- 2.092  	      0  	0.000000  	0.000000
- 2.113  	      0  	0.000000  	0.000000
- 2.135  	      0  	0.000000  	0.000000
- 2.157  	      0  	0.000000  	0.000000
- 2.179  	      0  	0.000000  	0.000000
- 2.201  	      0  	0.000000  	0.000000
- 2.224  	      0  	0.000000  	0.000000
- 2.247  	      0  	0.000000  	0.000000
- 2.270  	      0  	0.000000  	0.000000
- 2.293  	      0  	0.000000  	0.000000
- 2.316  	      0  	0.000000  	0.000000
- 2.340  	      0  	0.000000  	0.000000
- 2.364  	      0  	0.000000  	0.000000
- 2.388  	      0  	0.000000  	0.000000
- 2.412  	      0  	0.000000  	0.000000
- 2.437  	      0  	0.000000  	0.000000
- 2.462  	      0  	0.000000  	0.000000
- 2.487  	      0  	0.000000  	0.000000
- 2.512  	      0  	0.000000  	0.000000
- 2.538  	      0  	0.000000  	0.000000
- 2.564  	      0  	0.000000  	0.000000
- 2.590  	      0  	0.000000  	0.000000
- 2.616  	      0  	0.000000  	0.000000
- 2.643  	      0  	0.000000  	0.000000
- 2.670  	      0  	0.000000  	0.000000
- 2.697  	      0  	0.000000  	0.000000
- 2.724  	      0  	0.000000  	0.000000
- 2.752  	      0  	0.000000  	0.000000
- 2.780  	      0  	0.000000  	0.000000
- 2.808  	      0  	0.000000  	0.000000
- 2.837  	      0  	0.000000  	0.000000
- 2.866  	      0  	0.000000  	0.000000
- 2.895  	      0  	0.000000  	0.000000
- 2.924  	      0  	0.000000  	0.000000
- 2.954  	      0  	0.000000  	0.000000
- 2.984  	      0  	0.000000  	0.000000
- 3.014  	      0  	0.000000  	0.000000
- 3.045  	      0  	0.000000  	0.000000
- 3.076  	      0  	0.000000  	0.000000
- 3.107  	      0  	0.000000  	0.000000
- 3.139  	      0  	0.000000  	0.000000
- 3.171  	      0  	0.000000  	0.000000
- 3.203  	      0  	0.000000  	0.000000
- 3.236  	      0  	0.000000  	0.000000
- 3.269  	      0  	0.000000  	0.000000
- 3.302  	      0  	0.000000  	0.000000
- 3.336  	      0  	0.000000  	0.000000
- 3.370  	      1  	0.001490  	0.001490
- 3.404  	      0  	0.000000  	0.001490
- 3.439  	      0  	0.000000  	0.001490
- 3.474  	      0  	0.000000  	0.001490
- 3.509  	      0  	0.000000  	0.001490
- 3.545  	      0  	0.000000  	0.001490
- 3.581  	      0  	0.000000  	0.001490
- 3.617  	      0  	0.000000  	0.001490
- 3.654  	      0  	0.000000  	0.001490
- 3.691  	      0  	0.000000  	0.001490
- 3.728  	      0  	0.000000  	0.001490
- 3.766  	      0  	0.000000  	0.001490
- 3.804  	      0  	0.000000  	0.001490
- 3.843  	      0  	0.000000  	0.001490
- 3.882  	      0  	0.000000  	0.001490
- 3.921  	      0  	0.000000  	0.001490
- 3.961  	      0  	0.000000  	0.001490
- 4.001  	      0  	0.000000  	0.001490
- 4.042  	      0  	0.000000  	0.001490
- 4.083  	      0  	0.000000  	0.001490
- 4.124  	      0  	0.000000  	0.001490
- 4.166  	      0  	0.000000  	0.001490
- 4.208  	      0  	0.000000  	0.001490
- 4.251  	      0  	0.000000  	0.001490
- 4.294  	      0  	0.000000  	0.001490
- 4.337  	      0  	0.000000  	0.001490
- 4.381  	      0  	0.000000  	0.001490
- 4.425  	      0  	0.000000  	0.001490
- 4.470  	      0  	0.000000  	0.001490
- 4.515  	      0  	0.000000  	0.001490
- 4.561  	      0  	0.000000  	0.001490
- 4.607  	      0  	0.000000  	0.001490
- 4.654  	      0  	0.000000  	0.001490
- 4.701  	      0  	0.000000  	0.001490
- 4.749  	      0  	0.000000  	0.001490
- 4.797  	      0  	0.000000  	0.001490
- 4.845  	      0  	0.000000  	0.001490
- 4.894  	      0  	0.000000  	0.001490
- 4.943  	      0  	0.000000  	0.001490
- 4.993  	      0  	0.000000  	0.001490
- 5.043  	      0  	0.000000  	0.001490
- 5.094  	      0  	0.000000  	0.001490
- 5.145  	      0  	0.000000  	0.001490
- 5.197  	      0  	0.000000  	0.001490
- 5.249  	      0  	0.000000  	0.001490
- 5.302  	      0  	0.000000  	0.001490
- 5.356  	      0  	0.000000  	0.001490
- 5.410  	      0  	0.000000  	0.001490
- 5.465  	      0  	0.000000  	0.001490
- 5.520  	      0  	0.000000  	0.001490
- 5.576  	      0  	0.000000  	0.001490
- 5.632  	      0  	0.000000  	0.001490
- 5.689  	      0  	0.000000  	0.001490
- 5.746  	      0  	0.000000  	0.001490
- 5.804  	      0  	0.000000  	0.001490
- 5.863  	      0  	0.000000  	0.001490
- 5.922  	      0  	0.000000  	0.001490
- 5.982  	      1  	0.001490  	0.002981
- 6.042  	      0  	0.000000  	0.002981
- 6.103  	      0  	0.000000  	0.002981
- 6.165  	      0  	0.000000  	0.002981
- 6.227  	      0  	0.000000  	0.002981
- 6.290  	      0  	0.000000  	0.002981
- 6.353  	      0  	0.000000  	0.002981
- 6.417  	      0  	0.000000  	0.002981
- 6.482  	      0  	0.000000  	0.002981
- 6.547  	      1  	0.001490  	0.004471
- 6.613  	      0  	0.000000  	0.004471
- 6.680  	      0  	0.000000  	0.004471
- 6.747  	      0  	0.000000  	0.004471
- 6.815  	      0  	0.000000  	0.004471
- 6.884  	      0  	0.000000  	0.004471
- 6.953  	      0  	0.000000  	0.004471
- 7.023  	      0  	0.000000  	0.004471
- 7.094  	      0  	0.000000  	0.004471
- 7.165  	      0  	0.000000  	0.004471
- 7.237  	      0  	0.000000  	0.004471
- 7.310  	      0  	0.000000  	0.004471
- 7.384  	      0  	0.000000  	0.004471
- 7.458  	      0  	0.000000  	0.004471
- 7.533  	      0  	0.000000  	0.004471
- 7.609  	      0  	0.000000  	0.004471
- 7.686  	      0  	0.000000  	0.004471
- 7.763  	      0  	0.000000  	0.004471
- 7.841  	      0  	0.000000  	0.004471
- 7.920  	      0  	0.000000  	0.004471
- 8.000  	      0  	0.000000  	0.004471
- 8.081  	      0  	0.000000  	0.004471
- 8.162  	      0  	0.000000  	0.004471
- 8.244  	      0  	0.000000  	0.004471
- 8.327  	      0  	0.000000  	0.004471
- 8.411  	      1  	0.001490  	0.005961
- 8.496  	      0  	0.000000  	0.005961
- 8.581  	      0  	0.000000  	0.005961
- 8.667  	      1  	0.001490  	0.007452
- 8.754  	      0  	0.000000  	0.007452
- 8.842  	      0  	0.000000  	0.007452
- 8.931  	      0  	0.000000  	0.007452
- 9.021  	      0  	0.000000  	0.007452
- 9.112  	      0  	0.000000  	0.007452
- 9.204  	      0  	0.000000  	0.007452
- 9.297  	      2  	0.002981  	0.010432
- 9.390  	      0  	0.000000  	0.010432
- 9.484  	      0  	0.000000  	0.010432
- 9.579  	      0  	0.000000  	0.010432
- 9.675  	      0  	0.000000  	0.010432
- 9.772  	      0  	0.000000  	0.010432
- 9.870  	      0  	0.000000  	0.010432
- 9.969  	      0  	0.000000  	0.010432
-10.069  	      0  	0.000000  	0.010432
-10.170  	      0  	0.000000  	0.010432
-10.272  	      1  	0.001490  	0.011923
-10.375  	      2  	0.002981  	0.014903
-10.479  	      0  	0.000000  	0.014903
-10.584  	      0  	0.000000  	0.014903
-10.690  	      0  	0.000000  	0.014903
-10.797  	      0  	0.000000  	0.014903
-10.905  	      0  	0.000000  	0.014903
-11.015  	      0  	0.000000  	0.014903
-11.126  	      1  	0.001490  	0.016393
-11.238  	      0  	0.000000  	0.016393
-11.351  	      0  	0.000000  	0.016393
-11.465  	      0  	0.000000  	0.016393
-11.580  	      1  	0.001490  	0.017884
-11.696  	      0  	0.000000  	0.017884
-11.813  	      1  	0.001490  	0.019374
-11.932  	      2  	0.002981  	0.022355
-12.052  	      1  	0.001490  	0.023845
-12.173  	      1  	0.001490  	0.025335
-12.295  	      1  	0.001490  	0.026826
-12.418  	      1  	0.001490  	0.028316
-12.543  	      1  	0.001490  	0.029806
-12.669  	      1  	0.001490  	0.031297
-12.796  	      0  	0.000000  	0.031297
-12.924  	      0  	0.000000  	0.031297
-13.054  	      1  	0.001490  	0.032787
-13.185  	      1  	0.001490  	0.034277
-13.317  	      0  	0.000000  	0.034277
-13.451  	      1  	0.001490  	0.035768
-13.586  	      0  	0.000000  	0.035768
-13.722  	      1  	0.001490  	0.037258
-13.860  	      0  	0.000000  	0.037258
-13.999  	      0  	0.000000  	0.037258
-14.139  	      0  	0.000000  	0.037258
-14.281  	      0  	0.000000  	0.037258
-14.424  	      0  	0.000000  	0.037258
-14.569  	      0  	0.000000  	0.037258
-14.715  	      1  	0.001490  	0.038748
-14.863  	      0  	0.000000  	0.038748
-15.012  	      0  	0.000000  	0.038748
-15.163  	      1  	0.001490  	0.040238
-15.315  	      0  	0.000000  	0.040238
-15.469  	      0  	0.000000  	0.040238
-15.624  	      1  	0.001490  	0.041729
-15.781  	      1  	0.001490  	0.043219
-15.939  	      0  	0.000000  	0.043219
-16.099  	      0  	0.000000  	0.043219
-16.260  	      0  	0.000000  	0.043219
-16.423  	      2  	0.002981  	0.046200
-16.588  	      0  	0.000000  	0.046200
-16.754  	      0  	0.000000  	0.046200
-16.922  	      0  	0.000000  	0.046200
-17.092  	      1  	0.001490  	0.047690
-17.263  	      0  	0.000000  	0.047690
-17.436  	      2  	0.002981  	0.050671
-17.611  	      0  	0.000000  	0.050671
-17.788  	      2  	0.002981  	0.053651
-17.966  	      1  	0.001490  	0.055142
-18.146  	      1  	0.001490  	0.056632
-18.328  	      1  	0.001490  	0.058122
-18.512  	      3  	0.004471  	0.062593
-18.698  	      2  	0.002981  	0.065574
-18.885  	      1  	0.001490  	0.067064
-19.074  	      0  	0.000000  	0.067064
-19.265  	      4  	0.005961  	0.073025
-19.458  	      0  	0.000000  	0.073025
-19.653  	      2  	0.002981  	0.076006
-19.850  	      1  	0.001490  	0.077496
-20.049  	      0  	0.000000  	0.077496
-20.250  	      1  	0.001490  	0.078987
-20.453  	      0  	0.000000  	0.078987
-20.658  	      2  	0.002981  	0.081967
-20.865  	      0  	0.000000  	0.081967
-21.074  	      1  	0.001490  	0.083458
-21.285  	      2  	0.002981  	0.086438
-21.498  	      0  	0.000000  	0.086438
-21.713  	      0  	0.000000  	0.086438
-21.931  	      0  	0.000000  	0.086438
-22.151  	      0  	0.000000  	0.086438
-22.373  	      0  	0.000000  	0.086438
-22.597  	      1  	0.001490  	0.087928
-22.823  	      1  	0.001490  	0.089419
-23.052  	      0  	0.000000  	0.089419
-23.283  	      2  	0.002981  	0.092399
-23.516  	      1  	0.001490  	0.093890
-23.752  	      0  	0.000000  	0.093890
-23.990  	      1  	0.001490  	0.095380
-24.230  	      1  	0.001490  	0.096870
-24.473  	      0  	0.000000  	0.096870
-24.718  	      0  	0.000000  	0.096870
-24.966  	      1  	0.001490  	0.098361
-25.216  	      1  	0.001490  	0.099851
-25.469  	      0  	0.000000  	0.099851
-25.724  	      4  	0.005961  	0.105812
-25.982  	      1  	0.001490  	0.107303
-26.242  	      1  	0.001490  	0.108793
-26.505  	      2  	0.002981  	0.111773
-26.771  	      2  	0.002981  	0.114754
-27.039  	      2  	0.002981  	0.117735
-27.310  	      0  	0.000000  	0.117735
-27.584  	      1  	0.001490  	0.119225
-27.860  	      1  	0.001490  	0.120715
-28.139  	      1  	0.001490  	0.122206
-28.421  	      0  	0.000000  	0.122206
-28.706  	      2  	0.002981  	0.125186
-28.994  	      2  	0.002981  	0.128167
-29.284  	      3  	0.004471  	0.132638
-29.577  	      0  	0.000000  	0.132638
-29.873  	      1  	0.001490  	0.134128
-30.172  	      1  	0.001490  	0.135618
-30.474  	      2  	0.002981  	0.138599
-30.779  	      1  	0.001490  	0.140089
-31.087  	      3  	0.004471  	0.144560
-31.398  	      2  	0.002981  	0.147541
-31.712  	      1  	0.001490  	0.149031
-32.030  	      1  	0.001490  	0.150522
-32.351  	      2  	0.002981  	0.153502
-32.675  	      0  	0.000000  	0.153502
-33.002  	      1  	0.001490  	0.154993
-33.333  	      3  	0.004471  	0.159463
-33.667  	      1  	0.001490  	0.160954
-34.004  	      1  	0.001490  	0.162444
-34.345  	      3  	0.004471  	0.166915
-34.689  	      1  	0.001490  	0.168405
-35.036  	      1  	0.001490  	0.169896
-35.387  	      2  	0.002981  	0.172876
-35.741  	      0  	0.000000  	0.172876
-36.099  	      2  	0.002981  	0.175857
-36.460  	      1  	0.001490  	0.177347
-36.825  	      1  	0.001490  	0.178838
-37.194  	      0  	0.000000  	0.178838
-37.566  	      3  	0.004471  	0.183308
-37.942  	      1  	0.001490  	0.184799
-38.322  	      1  	0.001490  	0.186289
-38.706  	      1  	0.001490  	0.187779
-39.094  	      4  	0.005961  	0.193741
-39.485  	      1  	0.001490  	0.195231
-39.880  	      3  	0.004471  	0.199702
-40.279  	      1  	0.001490  	0.201192
-40.682  	      0  	0.000000  	0.201192
-41.089  	      1  	0.001490  	0.202683
-41.500  	      1  	0.001490  	0.204173
-41.916  	      0  	0.000000  	0.204173
-42.336  	      3  	0.004471  	0.208644
-42.760  	      1  	0.001490  	0.210134
-43.188  	      3  	0.004471  	0.214605
-43.620  	      4  	0.005961  	0.220566
-44.057  	      5  	0.007452  	0.228018
-44.498  	      0  	0.000000  	0.228018
-44.943  	      0  	0.000000  	0.228018
-45.393  	      3  	0.004471  	0.232489
-45.847  	      0  	0.000000  	0.232489
-46.306  	      4  	0.005961  	0.238450
-46.770  	      1  	0.001490  	0.239940
-47.238  	      2  	0.002981  	0.242921
-47.711  	      2  	0.002981  	0.245902
-48.189  	      1  	0.001490  	0.247392
-48.671  	      1  	0.001490  	0.248882
-49.158  	      2  	0.002981  	0.251863
-49.650  	      1  	0.001490  	0.253353
-50.147  	      2  	0.002981  	0.256334
-50.649  	      1  	0.001490  	0.257824
-51.156  	      2  	0.002981  	0.260805
-51.668  	      1  	0.001490  	0.262295
-52.185  	      2  	0.002981  	0.265276
-52.707  	      2  	0.002981  	0.268256
-53.235  	      0  	0.000000  	0.268256
-53.768  	      1  	0.001490  	0.269747
-54.306  	      1  	0.001490  	0.271237
-54.850  	      0  	0.000000  	0.271237
-55.399  	      2  	0.002981  	0.274218
-55.953  	      1  	0.001490  	0.275708
-56.513  	      1  	0.001490  	0.277198
-57.079  	      5  	0.007452  	0.284650
-57.650  	      2  	0.002981  	0.287630
-58.227  	      3  	0.004471  	0.292101
-58.810  	      3  	0.004471  	0.296572
-59.399  	      2  	0.002981  	0.299553
-59.993  	      4  	0.005961  	0.305514
-60.593  	      6  	0.008942  	0.314456
-61.199  	      0  	0.000000  	0.314456
-61.811  	      1  	0.001490  	0.315946
-62.430  	      3  	0.004471  	0.320417
-63.055  	      2  	0.002981  	0.323398
-63.686  	      2  	0.002981  	0.326379
-64.323  	      0  	0.000000  	0.326379
-64.967  	      3  	0.004471  	0.330849
-65.617  	      1  	0.001490  	0.332340
-66.274  	      3  	0.004471  	0.336811
-66.937  	      5  	0.007452  	0.344262
-67.607  	      3  	0.004471  	0.348733
-68.284  	      6  	0.008942  	0.357675
-68.967  	      2  	0.002981  	0.360656
-69.657  	      0  	0.000000  	0.360656
-70.354  	      1  	0.001490  	0.362146
-71.058  	      1  	0.001490  	0.363636
-71.769  	      4  	0.005961  	0.369598
-72.487  	      1  	0.001490  	0.371088
-73.212  	      3  	0.004471  	0.375559
-73.945  	      3  	0.004471  	0.380030
-74.685  	      2  	0.002981  	0.383010
-75.432  	      2  	0.002981  	0.385991
-76.187  	      4  	0.005961  	0.391952
-76.949  	      7  	0.010432  	0.402385
-77.719  	      4  	0.005961  	0.408346
-78.497  	      0  	0.000000  	0.408346
-79.282  	      5  	0.007452  	0.415797
-80.075  	      1  	0.001490  	0.417288
-80.876  	      0  	0.000000  	0.417288
-81.685  	      1  	0.001490  	0.418778
-82.502  	      2  	0.002981  	0.421759
-83.328  	      3  	0.004471  	0.426230
-84.162  	      2  	0.002981  	0.429210
-85.004  	      2  	0.002981  	0.432191
-85.855  	      2  	0.002981  	0.435171
-86.714  	      1  	0.001490  	0.436662
-87.582  	      5  	0.007452  	0.444113
-88.458  	      2  	0.002981  	0.447094
-89.343  	      2  	0.002981  	0.450075
-90.237  	      0  	0.000000  	0.450075
-91.140  	      2  	0.002981  	0.453055
-92.052  	      5  	0.007452  	0.460507
-92.973  	      3  	0.004471  	0.464978
-93.903  	      5  	0.007452  	0.472429
-94.843  	      3  	0.004471  	0.476900
-95.792  	      3  	0.004471  	0.481371
-96.750  	      0  	0.000000  	0.481371
-97.718  	      2  	0.002981  	0.484352
-98.696  	      2  	0.002981  	0.487332
-99.683  	      0  	0.000000  	0.487332
-100.680  	      2  	0.002981  	0.490313
-101.687  	      2  	0.002981  	0.493294
-102.704  	      2  	0.002981  	0.496274
-103.732  	      1  	0.001490  	0.497765
-104.770  	      5  	0.007452  	0.505216
-105.818  	      4  	0.005961  	0.511177
-106.877  	      1  	0.001490  	0.512668
-107.946  	      3  	0.004471  	0.517139
-109.026  	      1  	0.001490  	0.518629
-110.117  	      2  	0.002981  	0.521610
-111.219  	      4  	0.005961  	0.527571
-112.332  	      5  	0.007452  	0.535022
-113.456  	      2  	0.002981  	0.538003
-114.591  	      3  	0.004471  	0.542474
-115.737  	      1  	0.001490  	0.543964
-116.895  	      4  	0.005961  	0.549925
-118.064  	      2  	0.002981  	0.552906
-119.245  	      4  	0.005961  	0.558867
-120.438  	      1  	0.001490  	0.560358
-121.643  	      5  	0.007452  	0.567809
-122.860  	      2  	0.002981  	0.570790
-124.089  	      1  	0.001490  	0.572280
-125.330  	      1  	0.001490  	0.573770
-126.584  	      1  	0.001490  	0.575261
-127.850  	      4  	0.005961  	0.581222
-129.129  	      3  	0.004471  	0.585693
-130.421  	      1  	0.001490  	0.587183
-131.726  	      2  	0.002981  	0.590164
-133.044  	      3  	0.004471  	0.594635
-134.375  	      1  	0.001490  	0.596125
-135.719  	      4  	0.005961  	0.602086
-137.077  	      0  	0.000000  	0.602086
-138.448  	      3  	0.004471  	0.606557
-139.833  	      2  	0.002981  	0.609538
-141.232  	      1  	0.001490  	0.611028
-142.645  	      2  	0.002981  	0.614009
-144.072  	      3  	0.004471  	0.618480
-145.513  	      3  	0.004471  	0.622951
-146.969  	      2  	0.002981  	0.625931
-148.439  	      2  	0.002981  	0.628912
-149.924  	      2  	0.002981  	0.631893
-151.424  	      1  	0.001490  	0.633383
-152.939  	      3  	0.004471  	0.637854
-154.469  	      1  	0.001490  	0.639344
-156.014  	      2  	0.002981  	0.642325
-157.575  	      4  	0.005961  	0.648286
-159.151  	      0  	0.000000  	0.648286
-160.743  	      0  	0.000000  	0.648286
-162.351  	      3  	0.004471  	0.652757
-163.975  	      1  	0.001490  	0.654247
-165.615  	      0  	0.000000  	0.654247
-167.272  	      2  	0.002981  	0.657228
-168.945  	      3  	0.004471  	0.661699
-170.635  	      0  	0.000000  	0.661699
-172.342  	      2  	0.002981  	0.664680
-174.066  	      3  	0.004471  	0.669151
-175.807  	      1  	0.001490  	0.670641
-177.566  	      0  	0.000000  	0.670641
-179.342  	      1  	0.001490  	0.672131
-181.136  	      1  	0.001490  	0.673621
-182.948  	      0  	0.000000  	0.673621
-184.778  	      0  	0.000000  	0.673621
-186.626  	      2  	0.002981  	0.676602
-188.493  	      4  	0.005961  	0.682563
-190.378  	      1  	0.001490  	0.684054
-192.282  	      0  	0.000000  	0.684054
-194.205  	      3  	0.004471  	0.688525
-196.148  	      3  	0.004471  	0.692996
-198.110  	      3  	0.004471  	0.697466
-200.092  	      0  	0.000000  	0.697466
-202.093  	      3  	0.004471  	0.701937
-204.114  	      1  	0.001490  	0.703428
-206.156  	      1  	0.001490  	0.704918
-208.218  	      1  	0.001490  	0.706408
-210.301  	      3  	0.004471  	0.710879
-212.405  	      4  	0.005961  	0.716841
-214.530  	      3  	0.004471  	0.721311
-216.676  	      1  	0.001490  	0.722802
-218.843  	      0  	0.000000  	0.722802
-221.032  	      2  	0.002981  	0.725782
-223.243  	      3  	0.004471  	0.730253
-225.476  	      0  	0.000000  	0.730253
-227.731  	      3  	0.004471  	0.734724
-230.009  	      1  	0.001490  	0.736215
-232.310  	      3  	0.004471  	0.740686
-234.634  	      2  	0.002981  	0.743666
-236.981  	      2  	0.002981  	0.746647
-239.351  	      1  	0.001490  	0.748137
-241.745  	      1  	0.001490  	0.749627
-244.163  	      1  	0.001490  	0.751118
-246.605  	      2  	0.002981  	0.754098
-249.072  	      1  	0.001490  	0.755589
-251.563  	      3  	0.004471  	0.760060
-254.079  	      2  	0.002981  	0.763040
-256.620  	      0  	0.000000  	0.763040
-259.187  	      2  	0.002981  	0.766021
-261.779  	      0  	0.000000  	0.766021
-264.397  	      0  	0.000000  	0.766021
-267.041  	      1  	0.001490  	0.767511
-269.712  	      2  	0.002981  	0.770492
-272.410  	      3  	0.004471  	0.774963
-275.135  	      3  	0.004471  	0.779434
-277.887  	      0  	0.000000  	0.779434
-280.666  	      3  	0.004471  	0.783905
-283.473  	      3  	0.004471  	0.788376
-286.308  	      1  	0.001490  	0.789866
-289.172  	      0  	0.000000  	0.789866
-292.064  	      2  	0.002981  	0.792846
-294.985  	      3  	0.004471  	0.797317
-297.935  	      2  	0.002981  	0.800298
-300.915  	      0  	0.000000  	0.800298
-303.925  	      2  	0.002981  	0.803279
-306.965  	      3  	0.004471  	0.807750
-310.035  	      2  	0.002981  	0.810730
-313.136  	      1  	0.001490  	0.812221
-316.268  	      0  	0.000000  	0.812221
-319.431  	      3  	0.004471  	0.816692
-322.626  	      3  	0.004471  	0.821162
-325.853  	      4  	0.005961  	0.827124
-329.112  	      1  	0.001490  	0.828614
-332.404  	      0  	0.000000  	0.828614
-335.729  	      1  	0.001490  	0.830104
-339.087  	      2  	0.002981  	0.833085
-342.478  	      1  	0.001490  	0.834575
-345.903  	      0  	0.000000  	0.834575
-349.363  	      2  	0.002981  	0.837556
-352.857  	      1  	0.001490  	0.839046
-356.386  	      3  	0.004471  	0.843517
-359.950  	      2  	0.002981  	0.846498
-363.550  	      5  	0.007452  	0.853949
-367.186  	      2  	0.002981  	0.856930
-370.858  	      2  	0.002981  	0.859911
-374.567  	      1  	0.001490  	0.861401
-378.313  	      2  	0.002981  	0.864382
-382.097  	      1  	0.001490  	0.865872
-385.918  	      1  	0.001490  	0.867362
-389.778  	      3  	0.004471  	0.871833
-393.676  	      0  	0.000000  	0.871833
-397.613  	      2  	0.002981  	0.874814
-401.590  	      1  	0.001490  	0.876304
-405.606  	      1  	0.001490  	0.877794
-409.663  	      1  	0.001490  	0.879285
-413.760  	      0  	0.000000  	0.879285
-417.898  	      3  	0.004471  	0.883756
-422.077  	      3  	0.004471  	0.888227
-426.298  	      2  	0.002981  	0.891207
-430.561  	      1  	0.001490  	0.892697
-434.867  	      1  	0.001490  	0.894188
-439.216  	      1  	0.001490  	0.895678
-443.609  	      0  	0.000000  	0.895678
-448.046  	      2  	0.002981  	0.898659
-452.527  	      0  	0.000000  	0.898659
-457.053  	      0  	0.000000  	0.898659
-461.624  	      0  	0.000000  	0.898659
-466.241  	      0  	0.000000  	0.898659
-470.904  	      1  	0.001490  	0.900149
-475.614  	      1  	0.001490  	0.901639
-480.371  	      1  	0.001490  	0.903130
-485.175  	      1  	0.001490  	0.904620
-490.027  	      0  	0.000000  	0.904620
-494.928  	      0  	0.000000  	0.904620
-499.878  	      0  	0.000000  	0.904620
-504.877  	      0  	0.000000  	0.904620
-509.926  	      1  	0.001490  	0.906110
-515.026  	      3  	0.004471  	0.910581
-520.177  	      2  	0.002981  	0.913562
-525.379  	      2  	0.002981  	0.916542
-530.633  	      0  	0.000000  	0.916542
-535.940  	      0  	0.000000  	0.916542
-541.300  	      0  	0.000000  	0.916542
-546.714  	      0  	0.000000  	0.916542
-552.182  	      1  	0.001490  	0.918033
-557.704  	      0  	0.000000  	0.918033
-563.282  	      0  	0.000000  	0.918033
-568.915  	      1  	0.001490  	0.919523
-574.605  	      0  	0.000000  	0.919523
-580.352  	      0  	0.000000  	0.919523
-586.156  	      1  	0.001490  	0.921013
-592.018  	      0  	0.000000  	0.921013
-597.939  	      0  	0.000000  	0.921013
-603.919  	      1  	0.001490  	0.922504
-609.959  	      0  	0.000000  	0.922504
-616.059  	      0  	0.000000  	0.922504
-622.220  	      0  	0.000000  	0.922504
-628.443  	      1  	0.001490  	0.923994
-634.728  	      1  	0.001490  	0.925484
-641.076  	      2  	0.002981  	0.928465
-647.487  	      0  	0.000000  	0.928465
-653.962  	      1  	0.001490  	0.929955
-660.502  	      0  	0.000000  	0.929955
-667.108  	      0  	0.000000  	0.929955
-673.780  	      0  	0.000000  	0.929955
-680.518  	      1  	0.001490  	0.931446
-687.324  	      1  	0.001490  	0.932936
-694.198  	      0  	0.000000  	0.932936
-701.140  	      1  	0.001490  	0.934426
-708.152  	      1  	0.001490  	0.935917
-715.234  	      1  	0.001490  	0.937407
-722.387  	      3  	0.004471  	0.941878
-729.611  	      0  	0.000000  	0.941878
-736.908  	      0  	0.000000  	0.941878
-744.278  	      1  	0.001490  	0.943368
-751.721  	      0  	0.000000  	0.943368
-759.239  	      3  	0.004471  	0.947839
-766.832  	      2  	0.002981  	0.950820
-774.501  	      0  	0.000000  	0.950820
-782.247  	      0  	0.000000  	0.950820
-790.070  	      0  	0.000000  	0.950820
-797.971  	      2  	0.002981  	0.953800
-805.951  	      0  	0.000000  	0.953800
-814.011  	      2  	0.002981  	0.956781
-822.152  	      1  	0.001490  	0.958271
-830.374  	      1  	0.001490  	0.959762
-838.678  	      2  	0.002981  	0.962742
-847.065  	      2  	0.002981  	0.965723
-855.536  	      2  	0.002981  	0.968703
-864.092  	      1  	0.001490  	0.970194
-872.733  	      1  	0.001490  	0.971684
-881.461  	      0  	0.000000  	0.971684
-890.276  	      0  	0.000000  	0.971684
-899.179  	      0  	0.000000  	0.971684
-908.171  	      0  	0.000000  	0.971684
-917.253  	      0  	0.000000  	0.971684
-926.426  	      0  	0.000000  	0.971684
-935.691  	      2  	0.002981  	0.974665
-945.048  	      0  	0.000000  	0.974665
-954.499  	      0  	0.000000  	0.974665
-964.044  	      0  	0.000000  	0.974665
-973.685  	      0  	0.000000  	0.974665
-983.422  	      0  	0.000000  	0.974665
-993.257  	      2  	0.002981  	0.977645
-1003.190  	      0  	0.000000  	0.977645
-1013.222  	      0  	0.000000  	0.977645
-1023.355  	      1  	0.001490  	0.979136
-1033.589  	      0  	0.000000  	0.979136
-1043.925  	      1  	0.001490  	0.980626
-1054.365  	      1  	0.001490  	0.982116
-1064.909  	      0  	0.000000  	0.982116
-1075.559  	      0  	0.000000  	0.982116
-1086.315  	      0  	0.000000  	0.982116
-1097.179  	      0  	0.000000  	0.982116
-1108.151  	      0  	0.000000  	0.982116
-1119.233  	      0  	0.000000  	0.982116
-1130.426  	      0  	0.000000  	0.982116
-1141.731  	      0  	0.000000  	0.982116
-1153.149  	      0  	0.000000  	0.982116
-1164.681  	      1  	0.001490  	0.983607
-1176.328  	      0  	0.000000  	0.983607
-1188.092  	      1  	0.001490  	0.985097
-1199.973  	      0  	0.000000  	0.985097
-1211.973  	      0  	0.000000  	0.985097
-1224.093  	      0  	0.000000  	0.985097
-1236.334  	      0  	0.000000  	0.985097
-1248.698  	      1  	0.001490  	0.986587
-1261.185  	      0  	0.000000  	0.986587
-1273.797  	      0  	0.000000  	0.986587
-1286.535  	      0  	0.000000  	0.986587
-1299.401  	      0  	0.000000  	0.986587
-1312.396  	      0  	0.000000  	0.986587
-1325.520  	      0  	0.000000  	0.986587
-1338.776  	      1  	0.001490  	0.988077
-1352.164  	      0  	0.000000  	0.988077
-1365.686  	      1  	0.001490  	0.989568
-1379.343  	      0  	0.000000  	0.989568
-1393.137  	      0  	0.000000  	0.989568
-1407.069  	      1  	0.001490  	0.991058
-1421.140  	      0  	0.000000  	0.991058
-1435.352  	      0  	0.000000  	0.991058
-1449.706  	      0  	0.000000  	0.991058
-1464.204  	      0  	0.000000  	0.991058
-1478.847  	      0  	0.000000  	0.991058
-1493.636  	      0  	0.000000  	0.991058
-1508.573  	      1  	0.001490  	0.992548
-1523.659  	      0  	0.000000  	0.992548
-1538.896  	      0  	0.000000  	0.992548
-1554.285  	      0  	0.000000  	0.992548
-1569.828  	      0  	0.000000  	0.992548
-1585.527  	      0  	0.000000  	0.992548
-1601.383  	      0  	0.000000  	0.992548
-1617.397  	      0  	0.000000  	0.992548
-1633.571  	      0  	0.000000  	0.992548
-1649.907  	      0  	0.000000  	0.992548
-1666.407  	      0  	0.000000  	0.992548
-1683.072  	      0  	0.000000  	0.992548
-1699.903  	      0  	0.000000  	0.992548
-1716.903  	      0  	0.000000  	0.992548
-1734.073  	      0  	0.000000  	0.992548
-1751.414  	      0  	0.000000  	0.992548
-1768.929  	      0  	0.000000  	0.992548
-1786.619  	      0  	0.000000  	0.992548
-1804.486  	      0  	0.000000  	0.992548
-1822.531  	      0  	0.000000  	0.992548
-1840.757  	      0  	0.000000  	0.992548
-1859.165  	      0  	0.000000  	0.992548
-1877.757  	      0  	0.000000  	0.992548
-1896.535  	      1  	0.001490  	0.994039
-1915.501  	      0  	0.000000  	0.994039
-1934.657  	      0  	0.000000  	0.994039
-1954.004  	      0  	0.000000  	0.994039
-1973.545  	      1  	0.001490  	0.995529
-1993.281  	      1  	0.001490  	0.997019
-2013.214  	      0  	0.000000  	0.997019
-2033.347  	      1  	0.001490  	0.998510
-2053.681  	      0  	0.000000  	0.998510
-2074.218  	      0  	0.000000  	0.998510
-2094.961  	      0  	0.000000  	0.998510
-2115.911  	      0  	0.000000  	0.998510
-2137.071  	      0  	0.000000  	0.998510
-2158.442  	      1  	0.001490  	1.000000
-2180.027  	      0  	0.000000  	1.000000
-2201.828  	      0  	0.000000  	1.000000
-2223.847  	      0  	0.000000  	1.000000
-2246.086  	      0  	0.000000  	1.000000
-2268.547  	      0  	0.000000  	1.000000
-2291.233  	      0  	0.000000  	1.000000
-2314.146  	      0  	0.000000  	1.000000
-2337.288  	      0  	0.000000  	1.000000
-2360.661  	      0  	0.000000  	1.000000
-2384.268  	      0  	0.000000  	1.000000
-2408.111  	      0  	0.000000  	1.000000
-2432.193  	      0  	0.000000  	1.000000
-2456.515  	      0  	0.000000  	1.000000
-2481.081  	      0  	0.000000  	1.000000
-2505.892  	      0  	0.000000  	1.000000
-2530.951  	      0  	0.000000  	1.000000
-2556.261  	      0  	0.000000  	1.000000
-2581.824  	      0  	0.000000  	1.000000
-2607.643  	      0  	0.000000  	1.000000
-2633.720  	      0  	0.000000  	1.000000
-2660.058  	      0  	0.000000  	1.000000
-2686.659  	      0  	0.000000  	1.000000
-2713.526  	      0  	0.000000  	1.000000
-2740.662  	      0  	0.000000  	1.000000
-2768.069  	      0  	0.000000  	1.000000
-2795.750  	      0  	0.000000  	1.000000
-2823.708  	      0  	0.000000  	1.000000
-2851.946  	      0  	0.000000  	1.000000
-2880.466  	      0  	0.000000  	1.000000
-2909.271  	      0  	0.000000  	1.000000
-2938.364  	      0  	0.000000  	1.000000
-2967.748  	      0  	0.000000  	1.000000
-2997.426  	      0  	0.000000  	1.000000
-3027.401  	      0  	0.000000  	1.000000
-3057.676  	      0  	0.000000  	1.000000
-3088.253  	      0  	0.000000  	1.000000
-3119.136  	      0  	0.000000  	1.000000
-3150.328  	      0  	0.000000  	1.000000
-3181.832  	      0  	0.000000  	1.000000
-3213.651  	      0  	0.000000  	1.000000
-3245.788  	      0  	0.000000  	1.000000
-3278.246  	      0  	0.000000  	1.000000
-3311.029  	      0  	0.000000  	1.000000
-3344.140  	      0  	0.000000  	1.000000
-3377.582  	      0  	0.000000  	1.000000
-3411.358  	      0  	0.000000  	1.000000
+ 1.889  	      1  	0.001490  	0.001490
+ 1.908  	      0  	0.000000  	0.001490
+ 1.928  	      0  	0.000000  	0.001490
+ 1.948  	      0  	0.000000  	0.001490
+ 1.968  	      0  	0.000000  	0.001490
+ 1.988  	      0  	0.000000  	0.001490
+ 2.008  	      0  	0.000000  	0.001490
+ 2.029  	      0  	0.000000  	0.001490
+ 2.050  	      0  	0.000000  	0.001490
+ 2.071  	      0  	0.000000  	0.001490
+ 2.092  	      0  	0.000000  	0.001490
+ 2.113  	      0  	0.000000  	0.001490
+ 2.135  	      1  	0.001490  	0.002981
+ 2.157  	      0  	0.000000  	0.002981
+ 2.179  	      0  	0.000000  	0.002981
+ 2.201  	      0  	0.000000  	0.002981
+ 2.224  	      0  	0.000000  	0.002981
+ 2.247  	      0  	0.000000  	0.002981
+ 2.270  	      0  	0.000000  	0.002981
+ 2.293  	      0  	0.000000  	0.002981
+ 2.316  	      0  	0.000000  	0.002981
+ 2.340  	      0  	0.000000  	0.002981
+ 2.364  	      0  	0.000000  	0.002981
+ 2.388  	      0  	0.000000  	0.002981
+ 2.412  	      0  	0.000000  	0.002981
+ 2.437  	      0  	0.000000  	0.002981
+ 2.462  	      0  	0.000000  	0.002981
+ 2.487  	      0  	0.000000  	0.002981
+ 2.512  	      0  	0.000000  	0.002981
+ 2.538  	      0  	0.000000  	0.002981
+ 2.564  	      0  	0.000000  	0.002981
+ 2.590  	      0  	0.000000  	0.002981
+ 2.616  	      0  	0.000000  	0.002981
+ 2.643  	      0  	0.000000  	0.002981
+ 2.670  	      0  	0.000000  	0.002981
+ 2.697  	      0  	0.000000  	0.002981
+ 2.724  	      1  	0.001490  	0.004471
+ 2.752  	      0  	0.000000  	0.004471
+ 2.780  	      0  	0.000000  	0.004471
+ 2.808  	      0  	0.000000  	0.004471
+ 2.837  	      0  	0.000000  	0.004471
+ 2.866  	      0  	0.000000  	0.004471
+ 2.895  	      0  	0.000000  	0.004471
+ 2.924  	      0  	0.000000  	0.004471
+ 2.954  	      0  	0.000000  	0.004471
+ 2.984  	      0  	0.000000  	0.004471
+ 3.014  	      0  	0.000000  	0.004471
+ 3.045  	      0  	0.000000  	0.004471
+ 3.076  	      0  	0.000000  	0.004471
+ 3.107  	      0  	0.000000  	0.004471
+ 3.139  	      0  	0.000000  	0.004471
+ 3.171  	      0  	0.000000  	0.004471
+ 3.203  	      0  	0.000000  	0.004471
+ 3.236  	      0  	0.000000  	0.004471
+ 3.269  	      1  	0.001490  	0.005961
+ 3.302  	      0  	0.000000  	0.005961
+ 3.336  	      0  	0.000000  	0.005961
+ 3.370  	      0  	0.000000  	0.005961
+ 3.404  	      0  	0.000000  	0.005961
+ 3.439  	      0  	0.000000  	0.005961
+ 3.474  	      0  	0.000000  	0.005961
+ 3.509  	      0  	0.000000  	0.005961
+ 3.545  	      0  	0.000000  	0.005961
+ 3.581  	      0  	0.000000  	0.005961
+ 3.617  	      0  	0.000000  	0.005961
+ 3.654  	      0  	0.000000  	0.005961
+ 3.691  	      0  	0.000000  	0.005961
+ 3.728  	      0  	0.000000  	0.005961
+ 3.766  	      0  	0.000000  	0.005961
+ 3.804  	      0  	0.000000  	0.005961
+ 3.843  	      0  	0.000000  	0.005961
+ 3.882  	      0  	0.000000  	0.005961
+ 3.921  	      0  	0.000000  	0.005961
+ 3.961  	      0  	0.000000  	0.005961
+ 4.001  	      0  	0.000000  	0.005961
+ 4.042  	      0  	0.000000  	0.005961
+ 4.083  	      0  	0.000000  	0.005961
+ 4.124  	      0  	0.000000  	0.005961
+ 4.166  	      0  	0.000000  	0.005961
+ 4.208  	      0  	0.000000  	0.005961
+ 4.251  	      0  	0.000000  	0.005961
+ 4.294  	      0  	0.000000  	0.005961
+ 4.337  	      0  	0.000000  	0.005961
+ 4.381  	      0  	0.000000  	0.005961
+ 4.425  	      0  	0.000000  	0.005961
+ 4.470  	      0  	0.000000  	0.005961
+ 4.515  	      0  	0.000000  	0.005961
+ 4.561  	      0  	0.000000  	0.005961
+ 4.607  	      0  	0.000000  	0.005961
+ 4.654  	      0  	0.000000  	0.005961
+ 4.701  	      1  	0.001490  	0.007452
+ 4.749  	      0  	0.000000  	0.007452
+ 4.797  	      1  	0.001490  	0.008942
+ 4.845  	      0  	0.000000  	0.008942
+ 4.894  	      0  	0.000000  	0.008942
+ 4.943  	      0  	0.000000  	0.008942
+ 4.993  	      0  	0.000000  	0.008942
+ 5.043  	      1  	0.001490  	0.010432
+ 5.094  	      0  	0.000000  	0.010432
+ 5.145  	      0  	0.000000  	0.010432
+ 5.197  	      0  	0.000000  	0.010432
+ 5.249  	      0  	0.000000  	0.010432
+ 5.302  	      0  	0.000000  	0.010432
+ 5.356  	      0  	0.000000  	0.010432
+ 5.410  	      0  	0.000000  	0.010432
+ 5.465  	      0  	0.000000  	0.010432
+ 5.520  	      1  	0.001490  	0.011923
+ 5.576  	      0  	0.000000  	0.011923
+ 5.632  	      1  	0.001490  	0.013413
+ 5.689  	      0  	0.000000  	0.013413
+ 5.746  	      0  	0.000000  	0.013413
+ 5.804  	      0  	0.000000  	0.013413
+ 5.863  	      0  	0.000000  	0.013413
+ 5.922  	      0  	0.000000  	0.013413
+ 5.982  	      0  	0.000000  	0.013413
+ 6.042  	      0  	0.000000  	0.013413
+ 6.103  	      0  	0.000000  	0.013413
+ 6.165  	      0  	0.000000  	0.013413
+ 6.227  	      0  	0.000000  	0.013413
+ 6.290  	      0  	0.000000  	0.013413
+ 6.353  	      0  	0.000000  	0.013413
+ 6.417  	      0  	0.000000  	0.013413
+ 6.482  	      0  	0.000000  	0.013413
+ 6.547  	      0  	0.000000  	0.013413
+ 6.613  	      1  	0.001490  	0.014903
+ 6.680  	      1  	0.001490  	0.016393
+ 6.747  	      1  	0.001490  	0.017884
+ 6.815  	      1  	0.001490  	0.019374
+ 6.884  	      0  	0.000000  	0.019374
+ 6.953  	      0  	0.000000  	0.019374
+ 7.023  	      2  	0.002981  	0.022355
+ 7.094  	      0  	0.000000  	0.022355
+ 7.165  	      0  	0.000000  	0.022355
+ 7.237  	      0  	0.000000  	0.022355
+ 7.310  	      0  	0.000000  	0.022355
+ 7.384  	      0  	0.000000  	0.022355
+ 7.458  	      0  	0.000000  	0.022355
+ 7.533  	      0  	0.000000  	0.022355
+ 7.609  	      1  	0.001490  	0.023845
+ 7.686  	      0  	0.000000  	0.023845
+ 7.763  	      0  	0.000000  	0.023845
+ 7.841  	      0  	0.000000  	0.023845
+ 7.920  	      0  	0.000000  	0.023845
+ 8.000  	      0  	0.000000  	0.023845
+ 8.081  	      0  	0.000000  	0.023845
+ 8.162  	      0  	0.000000  	0.023845
+ 8.244  	      0  	0.000000  	0.023845
+ 8.327  	      1  	0.001490  	0.025335
+ 8.411  	      0  	0.000000  	0.025335
+ 8.496  	      0  	0.000000  	0.025335
+ 8.581  	      1  	0.001490  	0.026826
+ 8.667  	      0  	0.000000  	0.026826
+ 8.754  	      0  	0.000000  	0.026826
+ 8.842  	      1  	0.001490  	0.028316
+ 8.931  	      0  	0.000000  	0.028316
+ 9.021  	      0  	0.000000  	0.028316
+ 9.112  	      1  	0.001490  	0.029806
+ 9.204  	      0  	0.000000  	0.029806
+ 9.297  	      0  	0.000000  	0.029806
+ 9.390  	      1  	0.001490  	0.031297
+ 9.484  	      1  	0.001490  	0.032787
+ 9.579  	      1  	0.001490  	0.034277
+ 9.675  	      0  	0.000000  	0.034277
+ 9.772  	      0  	0.000000  	0.034277
+ 9.870  	      0  	0.000000  	0.034277
+ 9.969  	      0  	0.000000  	0.034277
+10.069  	      0  	0.000000  	0.034277
+10.170  	      1  	0.001490  	0.035768
+10.272  	      0  	0.000000  	0.035768
+10.375  	      0  	0.000000  	0.035768
+10.479  	      0  	0.000000  	0.035768
+10.584  	      2  	0.002981  	0.038748
+10.690  	      1  	0.001490  	0.040238
+10.797  	      0  	0.000000  	0.040238
+10.905  	      0  	0.000000  	0.040238
+11.015  	      1  	0.001490  	0.041729
+11.126  	      1  	0.001490  	0.043219
+11.238  	      1  	0.001490  	0.044709
+11.351  	      0  	0.000000  	0.044709
+11.465  	      1  	0.001490  	0.046200
+11.580  	      0  	0.000000  	0.046200
+11.696  	      0  	0.000000  	0.046200
+11.813  	      1  	0.001490  	0.047690
+11.932  	      1  	0.001490  	0.049180
+12.052  	      0  	0.000000  	0.049180
+12.173  	      2  	0.002981  	0.052161
+12.295  	      0  	0.000000  	0.052161
+12.418  	      0  	0.000000  	0.052161
+12.543  	      1  	0.001490  	0.053651
+12.669  	      2  	0.002981  	0.056632
+12.796  	      1  	0.001490  	0.058122
+12.924  	      3  	0.004471  	0.062593
+13.054  	      0  	0.000000  	0.062593
+13.185  	      2  	0.002981  	0.065574
+13.317  	      1  	0.001490  	0.067064
+13.451  	      0  	0.000000  	0.067064
+13.586  	      3  	0.004471  	0.071535
+13.722  	      2  	0.002981  	0.074516
+13.860  	      1  	0.001490  	0.076006
+13.999  	      1  	0.001490  	0.077496
+14.139  	      1  	0.001490  	0.078987
+14.281  	      4  	0.005961  	0.084948
+14.424  	      1  	0.001490  	0.086438
+14.569  	      0  	0.000000  	0.086438
+14.715  	      2  	0.002981  	0.089419
+14.863  	      3  	0.004471  	0.093890
+15.012  	      4  	0.005961  	0.099851
+15.163  	      3  	0.004471  	0.104322
+15.315  	      3  	0.004471  	0.108793
+15.469  	      0  	0.000000  	0.108793
+15.624  	      2  	0.002981  	0.111773
+15.781  	      3  	0.004471  	0.116244
+15.939  	      2  	0.002981  	0.119225
+16.099  	      4  	0.005961  	0.125186
+16.260  	      0  	0.000000  	0.125186
+16.423  	      0  	0.000000  	0.125186
+16.588  	      0  	0.000000  	0.125186
+16.754  	      2  	0.002981  	0.128167
+16.922  	      2  	0.002981  	0.131148
+17.092  	      0  	0.000000  	0.131148
+17.263  	      4  	0.005961  	0.137109
+17.436  	      1  	0.001490  	0.138599
+17.611  	      4  	0.005961  	0.144560
+17.788  	      0  	0.000000  	0.144560
+17.966  	      3  	0.004471  	0.149031
+18.146  	      1  	0.001490  	0.150522
+18.328  	      2  	0.002981  	0.153502
+18.512  	      0  	0.000000  	0.153502
+18.698  	      0  	0.000000  	0.153502
+18.885  	      4  	0.005961  	0.159463
+19.074  	      6  	0.008942  	0.168405
+19.265  	      1  	0.001490  	0.169896
+19.458  	      3  	0.004471  	0.174367
+19.653  	      0  	0.000000  	0.174367
+19.850  	      1  	0.001490  	0.175857
+20.049  	      2  	0.002981  	0.178838
+20.250  	      4  	0.005961  	0.184799
+20.453  	      2  	0.002981  	0.187779
+20.658  	      3  	0.004471  	0.192250
+20.865  	      4  	0.005961  	0.198212
+21.074  	      4  	0.005961  	0.204173
+21.285  	      4  	0.005961  	0.210134
+21.498  	      2  	0.002981  	0.213115
+21.713  	      4  	0.005961  	0.219076
+21.931  	      6  	0.008942  	0.228018
+22.151  	      3  	0.004471  	0.232489
+22.373  	      3  	0.004471  	0.236960
+22.597  	      5  	0.007452  	0.244411
+22.823  	      3  	0.004471  	0.248882
+23.052  	      5  	0.007452  	0.256334
+23.283  	      3  	0.004471  	0.260805
+23.516  	      7  	0.010432  	0.271237
+23.752  	      3  	0.004471  	0.275708
+23.990  	      1  	0.001490  	0.277198
+24.230  	      3  	0.004471  	0.281669
+24.473  	      7  	0.010432  	0.292101
+24.718  	      1  	0.001490  	0.293592
+24.966  	      1  	0.001490  	0.295082
+25.216  	      4  	0.005961  	0.301043
+25.469  	      3  	0.004471  	0.305514
+25.724  	      2  	0.002981  	0.308495
+25.982  	      6  	0.008942  	0.317437
+26.242  	      1  	0.001490  	0.318927
+26.505  	      3  	0.004471  	0.323398
+26.771  	      5  	0.007452  	0.330849
+27.039  	      3  	0.004471  	0.335320
+27.310  	      2  	0.002981  	0.338301
+27.584  	      1  	0.001490  	0.339791
+27.860  	      4  	0.005961  	0.345753
+28.139  	      1  	0.001490  	0.347243
+28.421  	      2  	0.002981  	0.350224
+28.706  	      3  	0.004471  	0.354694
+28.994  	      4  	0.005961  	0.360656
+29.284  	      4  	0.005961  	0.366617
+29.577  	      3  	0.004471  	0.371088
+29.873  	      1  	0.001490  	0.372578
+30.172  	      0  	0.000000  	0.372578
+30.474  	      5  	0.007452  	0.380030
+30.779  	      2  	0.002981  	0.383010
+31.087  	      1  	0.001490  	0.384501
+31.398  	      2  	0.002981  	0.387481
+31.712  	      0  	0.000000  	0.387481
+32.030  	      0  	0.000000  	0.387481
+32.351  	      3  	0.004471  	0.391952
+32.675  	      3  	0.004471  	0.396423
+33.002  	      2  	0.002981  	0.399404
+33.333  	      1  	0.001490  	0.400894
+33.667  	      2  	0.002981  	0.403875
+34.004  	      0  	0.000000  	0.403875
+34.345  	      2  	0.002981  	0.406855
+34.689  	      1  	0.001490  	0.408346
+35.036  	      2  	0.002981  	0.411326
+35.387  	      1  	0.001490  	0.412817
+35.741  	      2  	0.002981  	0.415797
+36.099  	      2  	0.002981  	0.418778
+36.460  	      1  	0.001490  	0.420268
+36.825  	      3  	0.004471  	0.424739
+37.194  	      2  	0.002981  	0.427720
+37.566  	      3  	0.004471  	0.432191
+37.942  	      2  	0.002981  	0.435171
+38.322  	      2  	0.002981  	0.438152
+38.706  	      1  	0.001490  	0.439642
+39.094  	      1  	0.001490  	0.441133
+39.485  	      2  	0.002981  	0.444113
+39.880  	      0  	0.000000  	0.444113
+40.279  	      0  	0.000000  	0.444113
+40.682  	      1  	0.001490  	0.445604
+41.089  	      2  	0.002981  	0.448584
+41.500  	      1  	0.001490  	0.450075
+41.916  	      0  	0.000000  	0.450075
+42.336  	      1  	0.001490  	0.451565
+42.760  	      1  	0.001490  	0.453055
+43.188  	      2  	0.002981  	0.456036
+43.620  	      2  	0.002981  	0.459016
+44.057  	      1  	0.001490  	0.460507
+44.498  	      0  	0.000000  	0.460507
+44.943  	      0  	0.000000  	0.460507
+45.393  	      1  	0.001490  	0.461997
+45.847  	      1  	0.001490  	0.463487
+46.306  	      1  	0.001490  	0.464978
+46.770  	      2  	0.002981  	0.467958
+47.238  	      2  	0.002981  	0.470939
+47.711  	      3  	0.004471  	0.475410
+48.189  	      1  	0.001490  	0.476900
+48.671  	      2  	0.002981  	0.479881
+49.158  	      2  	0.002981  	0.482861
+49.650  	      1  	0.001490  	0.484352
+50.147  	      1  	0.001490  	0.485842
+50.649  	      1  	0.001490  	0.487332
+51.156  	      1  	0.001490  	0.488823
+51.668  	      0  	0.000000  	0.488823
+52.185  	      2  	0.002981  	0.491803
+52.707  	      0  	0.000000  	0.491803
+53.235  	      0  	0.000000  	0.491803
+53.768  	      0  	0.000000  	0.491803
+54.306  	      0  	0.000000  	0.491803
+54.850  	      0  	0.000000  	0.491803
+55.399  	      0  	0.000000  	0.491803
+55.953  	      2  	0.002981  	0.494784
+56.513  	      0  	0.000000  	0.494784
+57.079  	      2  	0.002981  	0.497765
+57.650  	      2  	0.002981  	0.500745
+58.227  	      2  	0.002981  	0.503726
+58.810  	      1  	0.001490  	0.505216
+59.399  	      2  	0.002981  	0.508197
+59.993  	      1  	0.001490  	0.509687
+60.593  	      1  	0.001490  	0.511177
+61.199  	      1  	0.001490  	0.512668
+61.811  	      1  	0.001490  	0.514158
+62.430  	      0  	0.000000  	0.514158
+63.055  	      0  	0.000000  	0.514158
+63.686  	      0  	0.000000  	0.514158
+64.323  	      0  	0.000000  	0.514158
+64.967  	      1  	0.001490  	0.515648
+65.617  	      1  	0.001490  	0.517139
+66.274  	      3  	0.004471  	0.521610
+66.937  	      1  	0.001490  	0.523100
+67.607  	      0  	0.000000  	0.523100
+68.284  	      0  	0.000000  	0.523100
+68.967  	      0  	0.000000  	0.523100
+69.657  	      1  	0.001490  	0.524590
+70.354  	      0  	0.000000  	0.524590
+71.058  	      3  	0.004471  	0.529061
+71.769  	      2  	0.002981  	0.532042
+72.487  	      2  	0.002981  	0.535022
+73.212  	      0  	0.000000  	0.535022
+73.945  	      1  	0.001490  	0.536513
+74.685  	      1  	0.001490  	0.538003
+75.432  	      1  	0.001490  	0.539493
+76.187  	      2  	0.002981  	0.542474
+76.949  	      3  	0.004471  	0.546945
+77.719  	      0  	0.000000  	0.546945
+78.497  	      0  	0.000000  	0.546945
+79.282  	      1  	0.001490  	0.548435
+80.075  	      0  	0.000000  	0.548435
+80.876  	      0  	0.000000  	0.548435
+81.685  	      0  	0.000000  	0.548435
+82.502  	      1  	0.001490  	0.549925
+83.328  	      1  	0.001490  	0.551416
+84.162  	      1  	0.001490  	0.552906
+85.004  	      1  	0.001490  	0.554396
+85.855  	      1  	0.001490  	0.555887
+86.714  	      0  	0.000000  	0.555887
+87.582  	      4  	0.005961  	0.561848
+88.458  	      2  	0.002981  	0.564829
+89.343  	      0  	0.000000  	0.564829
+90.237  	      1  	0.001490  	0.566319
+91.140  	      1  	0.001490  	0.567809
+92.052  	      2  	0.002981  	0.570790
+92.973  	      1  	0.001490  	0.572280
+93.903  	      2  	0.002981  	0.575261
+94.843  	      1  	0.001490  	0.576751
+95.792  	      1  	0.001490  	0.578241
+96.750  	      0  	0.000000  	0.578241
+97.718  	      4  	0.005961  	0.584203
+98.696  	      0  	0.000000  	0.584203
+99.683  	      0  	0.000000  	0.584203
+100.680  	      0  	0.000000  	0.584203
+101.687  	      0  	0.000000  	0.584203
+102.704  	      1  	0.001490  	0.585693
+103.732  	      0  	0.000000  	0.585693
+104.770  	      0  	0.000000  	0.585693
+105.818  	      3  	0.004471  	0.590164
+106.877  	      5  	0.007452  	0.597615
+107.946  	      1  	0.001490  	0.599106
+109.026  	      2  	0.002981  	0.602086
+110.117  	      2  	0.002981  	0.605067
+111.219  	      1  	0.001490  	0.606557
+112.332  	      0  	0.000000  	0.606557
+113.456  	      1  	0.001490  	0.608048
+114.591  	      1  	0.001490  	0.609538
+115.737  	      1  	0.001490  	0.611028
+116.895  	      1  	0.001490  	0.612519
+118.064  	      1  	0.001490  	0.614009
+119.245  	      0  	0.000000  	0.614009
+120.438  	      1  	0.001490  	0.615499
+121.643  	      3  	0.004471  	0.619970
+122.860  	      1  	0.001490  	0.621461
+124.089  	      0  	0.000000  	0.621461
+125.330  	      1  	0.001490  	0.622951
+126.584  	      2  	0.002981  	0.625931
+127.850  	      4  	0.005961  	0.631893
+129.129  	      1  	0.001490  	0.633383
+130.421  	      0  	0.000000  	0.633383
+131.726  	      1  	0.001490  	0.634873
+133.044  	      2  	0.002981  	0.637854
+134.375  	      3  	0.004471  	0.642325
+135.719  	      1  	0.001490  	0.643815
+137.077  	      0  	0.000000  	0.643815
+138.448  	      2  	0.002981  	0.646796
+139.833  	      1  	0.001490  	0.648286
+141.232  	      0  	0.000000  	0.648286
+142.645  	      2  	0.002981  	0.651267
+144.072  	      2  	0.002981  	0.654247
+145.513  	      0  	0.000000  	0.654247
+146.969  	      1  	0.001490  	0.655738
+148.439  	      0  	0.000000  	0.655738
+149.924  	      0  	0.000000  	0.655738
+151.424  	      0  	0.000000  	0.655738
+152.939  	      2  	0.002981  	0.658718
+154.469  	      1  	0.001490  	0.660209
+156.014  	      0  	0.000000  	0.660209
+157.575  	      0  	0.000000  	0.660209
+159.151  	      1  	0.001490  	0.661699
+160.743  	      0  	0.000000  	0.661699
+162.351  	      0  	0.000000  	0.661699
+163.975  	      0  	0.000000  	0.661699
+165.615  	      2  	0.002981  	0.664680
+167.272  	      2  	0.002981  	0.667660
+168.945  	      2  	0.002981  	0.670641
+170.635  	      0  	0.000000  	0.670641
+172.342  	      0  	0.000000  	0.670641
+174.066  	      0  	0.000000  	0.670641
+175.807  	      1  	0.001490  	0.672131
+177.566  	      2  	0.002981  	0.675112
+179.342  	      0  	0.000000  	0.675112
+181.136  	      1  	0.001490  	0.676602
+182.948  	      1  	0.001490  	0.678092
+184.778  	      1  	0.001490  	0.679583
+186.626  	      1  	0.001490  	0.681073
+188.493  	      0  	0.000000  	0.681073
+190.378  	      1  	0.001490  	0.682563
+192.282  	      2  	0.002981  	0.685544
+194.205  	      1  	0.001490  	0.687034
+196.148  	      1  	0.001490  	0.688525
+198.110  	      2  	0.002981  	0.691505
+200.092  	      2  	0.002981  	0.694486
+202.093  	      1  	0.001490  	0.695976
+204.114  	      2  	0.002981  	0.698957
+206.156  	      3  	0.004471  	0.703428
+208.218  	      1  	0.001490  	0.704918
+210.301  	      0  	0.000000  	0.704918
+212.405  	      0  	0.000000  	0.704918
+214.530  	      2  	0.002981  	0.707899
+216.676  	      3  	0.004471  	0.712370
+218.843  	      1  	0.001490  	0.713860
+221.032  	      2  	0.002981  	0.716841
+223.243  	      2  	0.002981  	0.719821
+225.476  	      0  	0.000000  	0.719821
+227.731  	      2  	0.002981  	0.722802
+230.009  	      0  	0.000000  	0.722802
+232.310  	      3  	0.004471  	0.727273
+234.634  	      2  	0.002981  	0.730253
+236.981  	      2  	0.002981  	0.733234
+239.351  	      2  	0.002981  	0.736215
+241.745  	      1  	0.001490  	0.737705
+244.163  	      1  	0.001490  	0.739195
+246.605  	      0  	0.000000  	0.739195
+249.072  	      0  	0.000000  	0.739195
+251.563  	      0  	0.000000  	0.739195
+254.079  	      2  	0.002981  	0.742176
+256.620  	      1  	0.001490  	0.743666
+259.187  	      1  	0.001490  	0.745156
+261.779  	      1  	0.001490  	0.746647
+264.397  	      0  	0.000000  	0.746647
+267.041  	      2  	0.002981  	0.749627
+269.712  	      2  	0.002981  	0.752608
+272.410  	      0  	0.000000  	0.752608
+275.135  	      2  	0.002981  	0.755589
+277.887  	      2  	0.002981  	0.758569
+280.666  	      2  	0.002981  	0.761550
+283.473  	      1  	0.001490  	0.763040
+286.308  	      1  	0.001490  	0.764531
+289.172  	      3  	0.004471  	0.769001
+292.064  	      0  	0.000000  	0.769001
+294.985  	      1  	0.001490  	0.770492
+297.935  	      1  	0.001490  	0.771982
+300.915  	      3  	0.004471  	0.776453
+303.925  	      1  	0.001490  	0.777943
+306.965  	      2  	0.002981  	0.780924
+310.035  	      0  	0.000000  	0.780924
+313.136  	      2  	0.002981  	0.783905
+316.268  	      4  	0.005961  	0.789866
+319.431  	      3  	0.004471  	0.794337
+322.626  	      0  	0.000000  	0.794337
+325.853  	      2  	0.002981  	0.797317
+329.112  	      2  	0.002981  	0.800298
+332.404  	      0  	0.000000  	0.800298
+335.729  	      2  	0.002981  	0.803279
+339.087  	      1  	0.001490  	0.804769
+342.478  	      4  	0.005961  	0.810730
+345.903  	      1  	0.001490  	0.812221
+349.363  	      2  	0.002981  	0.815201
+352.857  	      1  	0.001490  	0.816692
+356.386  	      1  	0.001490  	0.818182
+359.950  	      3  	0.004471  	0.822653
+363.550  	      2  	0.002981  	0.825633
+367.186  	      1  	0.001490  	0.827124
+370.858  	      1  	0.001490  	0.828614
+374.567  	      1  	0.001490  	0.830104
+378.313  	      2  	0.002981  	0.833085
+382.097  	      1  	0.001490  	0.834575
+385.918  	      1  	0.001490  	0.836066
+389.778  	      1  	0.001490  	0.837556
+393.676  	      1  	0.001490  	0.839046
+397.613  	      1  	0.001490  	0.840537
+401.590  	      1  	0.001490  	0.842027
+405.606  	      1  	0.001490  	0.843517
+409.663  	      2  	0.002981  	0.846498
+413.760  	      1  	0.001490  	0.847988
+417.898  	      1  	0.001490  	0.849478
+422.077  	      1  	0.001490  	0.850969
+426.298  	      0  	0.000000  	0.850969
+430.561  	      1  	0.001490  	0.852459
+434.867  	      2  	0.002981  	0.855440
+439.216  	      0  	0.000000  	0.855440
+443.609  	      1  	0.001490  	0.856930
+448.046  	      0  	0.000000  	0.856930
+452.527  	      1  	0.001490  	0.858420
+457.053  	      0  	0.000000  	0.858420
+461.624  	      2  	0.002981  	0.861401
+466.241  	      0  	0.000000  	0.861401
+470.904  	      2  	0.002981  	0.864382
+475.614  	      0  	0.000000  	0.864382
+480.371  	      0  	0.000000  	0.864382
+485.175  	      3  	0.004471  	0.868852
+490.027  	      2  	0.002981  	0.871833
+494.928  	      0  	0.000000  	0.871833
+499.878  	      1  	0.001490  	0.873323
+504.877  	      0  	0.000000  	0.873323
+509.926  	      1  	0.001490  	0.874814
+515.026  	      0  	0.000000  	0.874814
+520.177  	      0  	0.000000  	0.874814
+525.379  	      3  	0.004471  	0.879285
+530.633  	      0  	0.000000  	0.879285
+535.940  	      1  	0.001490  	0.880775
+541.300  	      0  	0.000000  	0.880775
+546.714  	      0  	0.000000  	0.880775
+552.182  	      0  	0.000000  	0.880775
+557.704  	      0  	0.000000  	0.880775
+563.282  	      0  	0.000000  	0.880775
+568.915  	      0  	0.000000  	0.880775
+574.605  	      1  	0.001490  	0.882265
+580.352  	      0  	0.000000  	0.882265
+586.156  	      0  	0.000000  	0.882265
+592.018  	      1  	0.001490  	0.883756
+597.939  	      0  	0.000000  	0.883756
+603.919  	      1  	0.001490  	0.885246
+609.959  	      1  	0.001490  	0.886736
+616.059  	      0  	0.000000  	0.886736
+622.220  	      0  	0.000000  	0.886736
+628.443  	      2  	0.002981  	0.889717
+634.728  	      2  	0.002981  	0.892697
+641.076  	      0  	0.000000  	0.892697
+647.487  	      1  	0.001490  	0.894188
+653.962  	      3  	0.004471  	0.898659
+660.502  	      1  	0.001490  	0.900149
+667.108  	      1  	0.001490  	0.901639
+673.780  	      0  	0.000000  	0.901639
+680.518  	      1  	0.001490  	0.903130
+687.324  	      0  	0.000000  	0.903130
+694.198  	      1  	0.001490  	0.904620
+701.140  	      0  	0.000000  	0.904620
+708.152  	      0  	0.000000  	0.904620
+715.234  	      0  	0.000000  	0.904620
+722.387  	      4  	0.005961  	0.910581
+729.611  	      0  	0.000000  	0.910581
+736.908  	      1  	0.001490  	0.912072
+744.278  	      1  	0.001490  	0.913562
+751.721  	      1  	0.001490  	0.915052
+759.239  	      0  	0.000000  	0.915052
+766.832  	      0  	0.000000  	0.915052
+774.501  	      1  	0.001490  	0.916542
+782.247  	      1  	0.001490  	0.918033
+790.070  	      1  	0.001490  	0.919523
+797.971  	      0  	0.000000  	0.919523
+805.951  	      0  	0.000000  	0.919523
+814.011  	      2  	0.002981  	0.922504
+822.152  	      2  	0.002981  	0.925484
+830.374  	      2  	0.002981  	0.928465
+838.678  	      1  	0.001490  	0.929955
+847.065  	      1  	0.001490  	0.931446
+855.536  	      1  	0.001490  	0.932936
+864.092  	      1  	0.001490  	0.934426
+872.733  	      0  	0.000000  	0.934426
+881.461  	      1  	0.001490  	0.935917
+890.276  	      0  	0.000000  	0.935917
+899.179  	      1  	0.001490  	0.937407
+908.171  	      0  	0.000000  	0.937407
+917.253  	      0  	0.000000  	0.937407
+926.426  	      0  	0.000000  	0.937407
+935.691  	      0  	0.000000  	0.937407
+945.048  	      0  	0.000000  	0.937407
+954.499  	      0  	0.000000  	0.937407
+964.044  	      1  	0.001490  	0.938897
+973.685  	      0  	0.000000  	0.938897
+983.422  	      0  	0.000000  	0.938897
+993.257  	      0  	0.000000  	0.938897
+1003.190  	      0  	0.000000  	0.938897
+1013.222  	      0  	0.000000  	0.938897
+1023.355  	      1  	0.001490  	0.940387
+1033.589  	      0  	0.000000  	0.940387
+1043.925  	      2  	0.002981  	0.943368
+1054.365  	      2  	0.002981  	0.946349
+1064.909  	      4  	0.005961  	0.952310
+1075.559  	      0  	0.000000  	0.952310
+1086.315  	      0  	0.000000  	0.952310
+1097.179  	      0  	0.000000  	0.952310
+1108.151  	      3  	0.004471  	0.956781
+1119.233  	      0  	0.000000  	0.956781
+1130.426  	      2  	0.002981  	0.959762
+1141.731  	      0  	0.000000  	0.959762
+1153.149  	      2  	0.002981  	0.962742
+1164.681  	      0  	0.000000  	0.962742
+1176.328  	      0  	0.000000  	0.962742
+1188.092  	      0  	0.000000  	0.962742
+1199.973  	      3  	0.004471  	0.967213
+1211.973  	      0  	0.000000  	0.967213
+1224.093  	      1  	0.001490  	0.968703
+1236.334  	      0  	0.000000  	0.968703
+1248.698  	      0  	0.000000  	0.968703
+1261.185  	      1  	0.001490  	0.970194
+1273.797  	      1  	0.001490  	0.971684
+1286.535  	      0  	0.000000  	0.971684
+1299.401  	      0  	0.000000  	0.971684
+1312.396  	      2  	0.002981  	0.974665
+1325.520  	      1  	0.001490  	0.976155
+1338.776  	      0  	0.000000  	0.976155
+1352.164  	      1  	0.001490  	0.977645
+1365.686  	      0  	0.000000  	0.977645
+1379.343  	      0  	0.000000  	0.977645
+1393.137  	      0  	0.000000  	0.977645
+1407.069  	      1  	0.001490  	0.979136
+1421.140  	      1  	0.001490  	0.980626
+1435.352  	      0  	0.000000  	0.980626
+1449.706  	      0  	0.000000  	0.980626
+1464.204  	      0  	0.000000  	0.980626
+1478.847  	      0  	0.000000  	0.980626
+1493.636  	      1  	0.001490  	0.982116
+1508.573  	      1  	0.001490  	0.983607
+1523.659  	      0  	0.000000  	0.983607
+1538.896  	      0  	0.000000  	0.983607
+1554.285  	      1  	0.001490  	0.985097
+1569.828  	      0  	0.000000  	0.985097
+1585.527  	      0  	0.000000  	0.985097
+1601.383  	      1  	0.001490  	0.986587
+1617.397  	      1  	0.001490  	0.988077
+1633.571  	      0  	0.000000  	0.988077
+1649.907  	      0  	0.000000  	0.988077
+1666.407  	      0  	0.000000  	0.988077
+1683.072  	      0  	0.000000  	0.988077
+1699.903  	      0  	0.000000  	0.988077
+1716.903  	      0  	0.000000  	0.988077
+1734.073  	      0  	0.000000  	0.988077
+1751.414  	      1  	0.001490  	0.989568
+1768.929  	      1  	0.001490  	0.991058
+1786.619  	      2  	0.002981  	0.994039
+1804.486  	      0  	0.000000  	0.994039
+1822.531  	      0  	0.000000  	0.994039
+1840.757  	      0  	0.000000  	0.994039
+1859.165  	      1  	0.001490  	0.995529
+1877.757  	      0  	0.000000  	0.995529
+1896.535  	      0  	0.000000  	0.995529
+1915.501  	      0  	0.000000  	0.995529
+1934.657  	      0  	0.000000  	0.995529
+1954.004  	      0  	0.000000  	0.995529
+1973.545  	      0  	0.000000  	0.995529
+1993.281  	      0  	0.000000  	0.995529
+2013.214  	      0  	0.000000  	0.995529
+2033.347  	      0  	0.000000  	0.995529
+2053.681  	      0  	0.000000  	0.995529
+2074.218  	      0  	0.000000  	0.995529
+2094.961  	      0  	0.000000  	0.995529
+2115.911  	      0  	0.000000  	0.995529
+2137.071  	      0  	0.000000  	0.995529
+2158.442  	      0  	0.000000  	0.995529
+2180.027  	      0  	0.000000  	0.995529
+2201.828  	      0  	0.000000  	0.995529
+2223.847  	      0  	0.000000  	0.995529
+2246.086  	      0  	0.000000  	0.995529
+2268.547  	      0  	0.000000  	0.995529
+2291.233  	      0  	0.000000  	0.995529
+2314.146  	      0  	0.000000  	0.995529
+2337.288  	      0  	0.000000  	0.995529
+2360.661  	      0  	0.000000  	0.995529
+2384.268  	      0  	0.000000  	0.995529
+2408.111  	      0  	0.000000  	0.995529
+2432.193  	      0  	0.000000  	0.995529
+2456.515  	      0  	0.000000  	0.995529
+2481.081  	      0  	0.000000  	0.995529
+2505.892  	      0  	0.000000  	0.995529
+2530.951  	      0  	0.000000  	0.995529
+2556.261  	      1  	0.001490  	0.997019
+2581.824  	      1  	0.001490  	0.998510
+2607.643  	      0  	0.000000  	0.998510
+2633.720  	      0  	0.000000  	0.998510
+2660.058  	      0  	0.000000  	0.998510
+2686.659  	      0  	0.000000  	0.998510
+2713.526  	      0  	0.000000  	0.998510
+2740.662  	      0  	0.000000  	0.998510
+2768.069  	      0  	0.000000  	0.998510
+2795.750  	      0  	0.000000  	0.998510
+2823.708  	      0  	0.000000  	0.998510
+2851.946  	      0  	0.000000  	0.998510
+2880.466  	      0  	0.000000  	0.998510
+2909.271  	      0  	0.000000  	0.998510
+2938.364  	      0  	0.000000  	0.998510
+2967.748  	      0  	0.000000  	0.998510
+2997.426  	      0  	0.000000  	0.998510
+3027.401  	      0  	0.000000  	0.998510
+3057.676  	      0  	0.000000  	0.998510
+3088.253  	      0  	0.000000  	0.998510
+3119.136  	      0  	0.000000  	0.998510
+3150.328  	      0  	0.000000  	0.998510
+3181.832  	      0  	0.000000  	0.998510
+3213.651  	      0  	0.000000  	0.998510
+3245.788  	      0  	0.000000  	0.998510
+3278.246  	      0  	0.000000  	0.998510
+3311.029  	      0  	0.000000  	0.998510
+3344.140  	      0  	0.000000  	0.998510
+3377.582  	      0  	0.000000  	0.998510
+3411.358  	      1  	0.001490  	1.000000
 3445.472  	      0  	0.000000  	1.000000
 3479.927  	      0  	0.000000  	1.000000
 3514.727  	      0  	0.000000  	1.000000
@@ -4405,9 +4405,9 @@ IOdriver Write inter-arrival distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
       0       0       0       0       0       0       0       0       0       0 
 IOdriver Number of idle periods:  2
-IOdriver Idle period length average: 	1204.456247
-IOdriver Idle period length std.dev.:	1104.456247
-IOdriver Idle period length maximum:	2308.912495
+IOdriver Idle period length average: 	972.885466
+IOdriver Idle period length std.dev.:	872.885466
+IOdriver Idle period length maximum:	1845.770932
 IOdriver Idle period length distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
       0       0       0       0       0       0       0       0       0       2 
@@ -4429,9 +4429,9 @@ IOdriver Write request size maximum:	0
 IOdriver Write request size distribution
    =  1    =  2    =  3    =  4    <  7    <  9    < 13    < 17    < 21     21+
       0       0       0       0       0       0       0       0       0       0 
-IOdriver Instantaneous queue length average: 	259.322917
-IOdriver Instantaneous queue length std.dev.:	154.506708
-IOdriver Instantaneous queue length maximum:	531
+IOdriver Instantaneous queue length average: 	257.502976
+IOdriver Instantaneous queue length std.dev.:	153.138350
+IOdriver Instantaneous queue length maximum:	529
 IOdriver Instantaneous queue length distribution
    =  1    =  2    =  3    <  6    < 10    < 20    < 40    < 80    <150    150+
      34       1       1       2       4      10      20      40      72     488 
@@ -4445,60 +4445,60 @@ IOdriver Sub-optimal mapping penalty distribution
 DISK STATISTICS
 ---------------
 
-Disk Seeks of zero distance:	117	0.188103
-Disk Seek distance average: 	1441.667203
-Disk Seek distance std.dev.:	1943.967149
-Disk Seek distance maximum:	10892
+Disk Seeks of zero distance:	110	0.177419
+Disk Seek distance average: 	1581.651613
+Disk Seek distance std.dev.:	2179.051559
+Disk Seek distance maximum:	10971
 Disk Seek distance distribution
    =  0    <  6    < 21    < 41    < 81    <161    <321    <641    <1281    1281+
-    117      12       8      19      22      32      44      54      96     218 
-Disk Seek time average: 	3.953388
-Disk Seek time std.dev.:	2.734759
-Disk Seek time maximum:	12.388240
+    110       8       9      12      19      38      44      73      84     223 
+Disk Seek time average: 	4.223542
+Disk Seek time std.dev.:	2.863438
+Disk Seek time maximum:	12.428470
 Disk Seek time distribution
    <  0    <  1    <  2    <  3    <  4    <  5    <  6    <  7    <  8      8+
-      0     117      37      79      49     138      83      28      49      42 
+      0     110      27      74      48     146      74      42      38      61 
 Disk Full rotation time:      8.333333
 Disk Zero rotate latency:	0	0.000000
-Disk Rotational latency average: 	2.238501
-Disk Rotational latency std.dev.:	2.220924
-Disk Rotational latency maximum:	8.324019
+Disk Rotational latency average: 	2.737229
+Disk Rotational latency std.dev.:	2.478877
+Disk Rotational latency maximum:	8.332849
 Disk Rotational latency distribution
    <  1    <  3    <  5    <  7    <  8    <  9    < 11    < 13    < 15     15+
-    228     232      84      27      30      21       0       0       0       0 
-Disk Transfer time average: 	0.197655
-Disk Transfer time std.dev.:	0.231695
-Disk Transfer time maximum:	2.539448
+    207     190     101      53      44      25       0       0       0       0 
+Disk Transfer time average: 	0.197194
+Disk Transfer time std.dev.:	0.220678
+Disk Transfer time maximum:	1.890909
 Disk Transfer time distribution
   < 0.5   < 1.0   < 1.5   < 2.0   < 2.5   < 3.0   < 4.0   < 5.0   < 6.0     60+
-    595      14       6       6       0       1       0       0       0       0 
-Disk Positioning time average: 	6.191889
-Disk Positioning time std.dev.:	3.644012
-Disk Positioning time maximum:	19.540721
+    594      13       6       7       0       0       0       0       0       0 
+Disk Positioning time average: 	6.960771
+Disk Positioning time std.dev.:	4.083167
+Disk Positioning time maximum:	19.927426
 Disk Positioning time distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
-    251     281      74      16       0       0       0       0       0       0 
-Disk Access time average: 	6.389544
-Disk Access time std.dev.:	3.641637
-Disk Access time maximum:	19.626171
+    226     256     102      36       0       0       0       0       0       0 
+Disk Access time average: 	7.157965
+Disk Access time std.dev.:	4.077633
+Disk Access time maximum:	20.012875
 Disk Access time distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
-    227     302      76      17       0       0       0       0       0       0 
+    203     276     101      39       1       0       0       0       0       0 
 Disk Number of buffer accesses:    671
-Disk Buffer hit ratio:            53 	0.078987
-Disk Buffer miss ratio:               618 	0.921013
-Disk Buffer read hit ratio:            49 	0.073025 	0.073025
+Disk Buffer hit ratio:            54 	0.080477
+Disk Buffer miss ratio:               617 	0.919523
+Disk Buffer read hit ratio:            50 	0.074516 	0.074516
 Disk Buffer prepend hit ratio:            0 	0.000000
 Disk Buffer append hit ratio:            0 	0.000000
 Disk Write combinations:                0 	0.000000
-Disk Ongoing read-ahead hit ratio:      0 	0.000000 	0.000000
-Disk Average read-ahead hit size:  0.000000
-Disk Average remaining read-ahead: 0.000000
-Disk Partial read hit ratio:      4 	0.005961 	0.005961
-Disk Average partial hit size:     5.000000
-Disk Average remaining partial:    4.000000
-Disk Total disk bus wait time: 12.866790
-Disk Number of disk bus waits: 688
+Disk Ongoing read-ahead hit ratio:      1 	0.001490 	0.001490
+Disk Average read-ahead hit size:  13.000000
+Disk Average remaining read-ahead: 3.000000
+Disk Partial read hit ratio:      3 	0.004471 	0.004471
+Disk Average partial hit size:     5.333333
+Disk Average remaining partial:    5.333333
+Disk Total disk bus wait time: 13.371370
+Disk Number of disk bus waits: 687
 
 
 
@@ -4524,17 +4524,17 @@ BUS STATISTICS
 
 Bus #1
 Bus #1 Total utilization time: 	608.43   	0.08986
-Bus #1 (bus1) Bus idle period length average: 	9.644077
-Bus #1 (bus1) Bus idle period length std.dev.:	91.179295
-Bus #1 (bus1) Bus idle period length maximum:	2308.912495
+Bus #1 (bus1) Bus idle period length average: 	9.689568
+Bus #1 (bus1) Bus idle period length std.dev.:	73.073001
+Bus #1 (bus1) Bus idle period length maximum:	1845.770932
 Bus #1 (bus1) Bus idle period length distribution
    <  5    < 10    < 15    < 20    < 25    < 30    < 40    < 50    < 60     60+
-    289     259      75      14       0       0       0       0       0       2 
-Bus #1 Number of arbitrations: 	1359
-Bus #1 (bus1) Arbitration wait time average: 	0.101547
-Bus #1 (bus1) Arbitration wait time std.dev.:	0.692764
+    264     234     106      30       0       0       0       0       0       2 
+Bus #1 Number of arbitrations: 	1358
+Bus #1 (bus1) Arbitration wait time average: 	0.101994
+Bus #1 (bus1) Arbitration wait time std.dev.:	0.693026
 Bus #1 (bus1) Arbitration wait time maximum:	7.820990
 Bus #1 (bus1) Arbitration wait time distribution
    =  0    <  1    <  2    <  5    < 10    < 15    < 25    < 40    < 60     60+
-   1277      54       4      12      12       0       0       0       0       0 
+   1274      56       4      12      12       0       0       0       0       0 
 

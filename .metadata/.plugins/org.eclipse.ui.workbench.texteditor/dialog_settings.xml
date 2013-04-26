@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
-		<item value="95" key="DIALOG_Y_ORIGIN"/>
-		<item value="495" key="DIALOG_X_ORIGIN"/>
+		<item value="79" key="DIALOG_Y_ORIGIN"/>
+		<item value="640" key="DIALOG_X_ORIGIN"/>
 		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="ioqueue_get_request_from_opt_sptf_queue" key="selection"/>
+		<item value="simtime" key="selection"/>
 		<list key="findhistory">
-			<item value="ioqueue_get_request_from_opt_sptf_queue"/>
-			<item value="ioqueue_add_new_request"/>
-			<item value="ioqueue_add_new_request("/>
-			<item value="ioqueue_insert_ordered_to_queue"/>
-			<item value="VM"/>
-			<item value="vm"/>
-			<item value="VM_"/>
-			<item value="//"/>
+			<item value="simtime"/>
+			<item value="remove_com"/>
+			<item value="trace_mode"/>
+			<item value="Max queue length"/>
+			<item value="len"/>
+			<item value="shares"/>
+			<item value="all expired`"/>
+			<item value="all expired"/>
 		</list>
 		<list key="replacehistory">
 		</list>
